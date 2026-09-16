@@ -26,7 +26,11 @@ export default function AppSidebar() {
   return (
     <Sidebar>
       <Sidebar.Header>
-        <img src="/BSQML.png" alt="" className="size-6 rounded" />
+        <img
+          src={`${import.meta.env.BASE_URL}BSQML.png`}
+          alt=""
+          className="size-6 rounded"
+        />
         <span>Quest BSML Docs</span>
       </Sidebar.Header>
       <Sidebar.Content>

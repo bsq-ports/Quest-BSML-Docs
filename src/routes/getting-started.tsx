@@ -121,7 +121,7 @@ function GettingStarted() {
       </p>
       <CodeBlock>{ViewExample}</CodeBlock>
       <img
-        src="/Example.jpg"
+        src={`${import.meta.env.BASE_URL}Example.jpg`}
         alt="Built view from example"
         className="rounded-lg border border-kumo-line"
       />

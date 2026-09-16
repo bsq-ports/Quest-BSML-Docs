@@ -77,7 +77,7 @@ function TagPage() {
           </pre>
           {example.exampleImage && (
             <img
-              src={`/img/${example.exampleImage}`}
+              src={`${import.meta.env.BASE_URL}img/${example.exampleImage}`}
               alt={`${docTag.name} in-game result`}
               className="rounded-lg border border-kumo-line"
             />
