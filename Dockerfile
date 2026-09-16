@@ -13,7 +13,6 @@ RUN bun install --frozen-lockfile
 
 COPY . .
 RUN bun run build
-RUN sed "s#__BASE_PATH__#${BASE_PATH}#g" nginx.conf.template > /app/nginx.conf
 
 # ---- Serve ----
 FROM nginx:alpine
