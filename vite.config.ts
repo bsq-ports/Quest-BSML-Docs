@@ -9,6 +9,9 @@ const basePath = process.env.BASE_PATH || "/";
 
 export default defineConfig({
   base: basePath,
+  preview: {
+    allowedHosts: ["aeternal.dev"],
+  },
   plugins: [
     tanstackRouter({ target: "react", autoCodeSplitting: true }),
     react(),
