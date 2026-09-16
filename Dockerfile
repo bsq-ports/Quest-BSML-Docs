@@ -14,9 +14,4 @@ RUN bun install --frozen-lockfile
 COPY . .
 RUN bun run build
 
-# ---- Serve ----
-FROM nginx:alpine
-COPY --from=build /app/dist /usr/share/nginx/html
-COPY --from=build /app/nginx.conf /etc/nginx/conf.d/default.conf
-
 EXPOSE 80
