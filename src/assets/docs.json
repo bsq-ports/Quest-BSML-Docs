@@ -7,16 +7,15 @@
                 "primary-button"
             ],
             "components": [
-                "UnityEngine.UI.Button",
-                "UnityEngine.UI.ContentSizeFitter",
                 "UnityEngine.UI.LayoutElement",
+                "UnityEngine.UI.ContentSizeFitter",
+                "UnityEngine.UI.Graphic",
                 "UnityEngine.UI.LayoutGroup",
                 "UnityEngine.RectTransform",
                 "UnityEngine.UI.Selectable",
+                "UnityEngine.UI.Button",
                 "TMPro.TextMeshProUGUI"
-            ],
-            "description": "A copy of the shiny play button",
-            "since": ""
+            ]
         },
         {
             "name": "background",
@@ -26,12 +25,10 @@
                 "div"
             ],
             "components": [
-                "BSML.Backgroundable",
                 "UnityEngine.UI.ContentSizeFitter",
+                "BSML.Backgroundable",
                 "UnityEngine.RectTransform"
-            ],
-            "description": "A Generic container",
-            "since": ""
+            ]
         },
         {
             "name": "toggle-setting",
@@ -44,20 +41,17 @@
             "components": [
                 "BSML.BaseSetting",
                 "UnityEngine.UI.LayoutElement",
+                "UnityEngine.UI.Graphic",
                 "UnityEngine.RectTransform",
                 "TMPro.TextMeshProUGUI"
-            ],
-            "description": "Toggle a boolean on and off",
-            "since": ""
+            ]
         },
         {
             "name": "bsml",
             "aliases": [
                 "bsml"
             ],
-            "components": [],
-            "description": "Generic, Transparent tag",
-            "since": ""
+            "components": []
         },
         {
             "name": "button",
@@ -65,16 +59,15 @@
                 "button"
             ],
             "components": [
-                "UnityEngine.UI.Button",
-                "UnityEngine.UI.ContentSizeFitter",
                 "UnityEngine.UI.LayoutElement",
+                "UnityEngine.UI.ContentSizeFitter",
+                "UnityEngine.UI.Graphic",
                 "UnityEngine.UI.LayoutGroup",
                 "UnityEngine.RectTransform",
                 "UnityEngine.UI.Selectable",
+                "UnityEngine.UI.Button",
                 "TMPro.TextMeshProUGUI"
-            ],
-            "description": "Create a button",
-            "since": ""
+            ]
         },
         {
             "name": "button-with-icon",
@@ -83,16 +76,14 @@
                 "icon-button"
             ],
             "components": [
-                "UnityEngine.UI.Button",
-                "BSML.ButtonIconImage",
-                "UnityEngine.UI.ContentSizeFitter",
                 "UnityEngine.UI.LayoutElement",
+                "UnityEngine.UI.ContentSizeFitter",
                 "UnityEngine.UI.LayoutGroup",
                 "UnityEngine.RectTransform",
-                "UnityEngine.UI.Selectable"
-            ],
-            "description": "Create a button with an icon",
-            "since": ""
+                "UnityEngine.UI.Selectable",
+                "UnityEngine.UI.Button",
+                "BSML.ButtonIconImage"
+            ]
         },
         {
             "name": "clickable-image",
@@ -101,15 +92,13 @@
                 "clickable-img"
             ],
             "components": [
-                "BSML.ClickableImage",
-                "UnityEngine.UI.Image",
-                "UnityEngine.UI.Graphic",
-                "HMUI.ImageView",
                 "UnityEngine.UI.LayoutElement",
+                "BSML.ClickableImage",
+                "UnityEngine.UI.Graphic",
+                "UnityEngine.UI.Image",
+                "HMUI.ImageView",
                 "UnityEngine.RectTransform"
-            ],
-            "description": "Create an image you can click",
-            "since": ""
+            ]
         },
         {
             "name": "clickable-text",
@@ -117,13 +106,12 @@
                 "clickable-text"
             ],
             "components": [
-                "BSML.ClickableText",
                 "UnityEngine.UI.LayoutElement",
+                "BSML.ClickableText",
+                "UnityEngine.UI.Graphic",
                 "UnityEngine.RectTransform",
                 "TMPro.TextMeshProUGUI"
-            ],
-            "description": "Create some text you can click",
-            "since": ""
+            ]
         },
         {
             "name": "color-setting",
@@ -132,16 +120,13 @@
             ],
             "components": [
                 "BSML.BaseSetting",
-                "UnityEngine.UI.Image",
-                "UnityEngine.UI.Graphic",
-                "HMUI.ImageView",
                 "UnityEngine.UI.LayoutElement",
-                "BSML.ModalColorPicker",
+                "UnityEngine.UI.Graphic",
+                "UnityEngine.UI.Image",
+                "HMUI.ImageView",
                 "UnityEngine.RectTransform",
                 "TMPro.TextMeshProUGUI"
-            ],
-            "description": "Configure a color",
-            "since": ""
+            ]
         },
         {
             "name": "leaderboard",
@@ -150,11 +135,10 @@
                 "custom-leaderboard"
             ],
             "components": [
+                "UnityEngine.UI.Graphic",
                 "LeaderboardTableView",
                 "UnityEngine.RectTransform"
-            ],
-            "description": "Make a leaderboard UI copy, useful for custom leaderboards",
-            "since": ""
+            ]
         },
         {
             "name": "custom-list",
@@ -162,12 +146,10 @@
                 "custom-list"
             ],
             "components": [
-                "BSML.CustomCellListTableData",
                 "UnityEngine.UI.LayoutElement",
+                "BSML.CustomCellListTableData",
                 "UnityEngine.RectTransform"
-            ],
-            "description": "Make a custom celled list",
-            "since": ""
+            ]
         },
         {
             "name": "dropdown-list-setting",
@@ -177,12 +159,23 @@
             "components": [
                 "BSML.BaseSetting",
                 "UnityEngine.UI.LayoutElement",
+                "UnityEngine.UI.Graphic",
                 "UnityEngine.RectTransform",
                 "BSML.DropdownListSetting",
                 "TMPro.TextMeshProUGUI"
+            ]
+        },
+        {
+            "name": "gradient-text",
+            "aliases": [
+                "gradient-text"
             ],
-            "description": "Let the user select from premade options",
-            "since": ""
+            "components": [
+                "UnityEngine.UI.Graphic",
+                "UnityEngine.RectTransform",
+                "BSML.TextGradientUpdater",
+                "TMPro.TextMeshProUGUI"
+            ]
         },
         {
             "name": "grid",
@@ -190,15 +183,13 @@
                 "grid"
             ],
             "components": [
-                "BSML.Backgroundable",
+                "UnityEngine.UI.LayoutElement",
                 "UnityEngine.UI.ContentSizeFitter",
                 "UnityEngine.UI.GridLayoutGroup",
-                "UnityEngine.UI.LayoutElement",
+                "BSML.Backgroundable",
                 "UnityEngine.UI.LayoutGroup",
                 "UnityEngine.RectTransform"
-            ],
-            "description": "A grid layout, with cells along the horizontal and vertical axis",
-            "since": ""
+            ]
         },
         {
             "name": "horizontal",
@@ -206,15 +197,13 @@
                 "horizontal"
             ],
             "components": [
-                "BSML.Backgroundable",
+                "UnityEngine.UI.LayoutElement",
                 "UnityEngine.UI.ContentSizeFitter",
                 "UnityEngine.UI.HorizontalOrVerticalLayoutGroup",
-                "UnityEngine.UI.LayoutElement",
+                "BSML.Backgroundable",
                 "UnityEngine.UI.LayoutGroup",
                 "UnityEngine.RectTransform"
-            ],
-            "description": "A horizontal layout, All it's children will be laid out horizontally",
-            "since": ""
+            ]
         },
         {
             "name": "icon-segments",
@@ -226,9 +215,7 @@
                 "HMUI.IconSegmentedControl",
                 "UnityEngine.UI.LayoutGroup",
                 "UnityEngine.RectTransform"
-            ],
-            "description": "A copy of the characteristic selector in the song selection UI, choose different options based on icons",
-            "since": ""
+            ]
         },
         {
             "name": "image",
@@ -237,14 +224,12 @@
                 "img"
             ],
             "components": [
-                "UnityEngine.UI.Image",
-                "UnityEngine.UI.Graphic",
-                "HMUI.ImageView",
                 "UnityEngine.UI.LayoutElement",
+                "UnityEngine.UI.Graphic",
+                "UnityEngine.UI.Image",
+                "HMUI.ImageView",
                 "UnityEngine.RectTransform"
-            ],
-            "description": "Display an image",
-            "since": ""
+            ]
         },
         {
             "name": "increment-setting",
@@ -254,12 +239,11 @@
             "components": [
                 "BSML.BaseSetting",
                 "UnityEngine.UI.LayoutElement",
+                "UnityEngine.UI.Graphic",
                 "UnityEngine.RectTransform",
                 "BSML.IncrementSetting",
                 "TMPro.TextMeshProUGUI"
-            ],
-            "description": "Configure a numeric value with a min/max, using buttons",
-            "since": ""
+            ]
         },
         {
             "name": "text",
@@ -268,25 +252,22 @@
                 "label"
             ],
             "components": [
+                "UnityEngine.UI.Graphic",
                 "UnityEngine.RectTransform",
-                "UnityEngine.UI.LayoutElement",
                 "TMPro.TextMeshProUGUI"
-            ],
-            "description": "Display some text",
-            "since": ""
+            ]
         },
         {
             "name": "list",
             "aliases": [
-                "list"
+                "list",
+                "list2"
             ],
             "components": [
-                "BSML.CustomListTableData",
                 "UnityEngine.UI.LayoutElement",
+                "BSML.CustomListTableData",
                 "UnityEngine.RectTransform"
-            ],
-            "description": "Create a list with cells based on base-game lists",
-            "since": ""
+            ]
         },
         {
             "name": "list-setting",
@@ -296,12 +277,11 @@
             "components": [
                 "BSML.BaseSetting",
                 "UnityEngine.UI.LayoutElement",
+                "UnityEngine.UI.Graphic",
                 "UnityEngine.RectTransform",
                 "BSML.ListSetting",
                 "TMPro.TextMeshProUGUI"
-            ],
-            "description": "Use buttons to choose between pre-set values",
-            "since": ""
+            ]
         },
         {
             "name": "list-slider-setting",
@@ -311,12 +291,11 @@
             "components": [
                 "BSML.BaseSetting",
                 "UnityEngine.UI.LayoutElement",
+                "UnityEngine.UI.Graphic",
                 "UnityEngine.RectTransform",
                 "BSML.ListSliderSetting",
                 "TMPro.TextMeshProUGUI"
-            ],
-            "description": "Use a slider to choose between pre-set values, buttons optional",
-            "since": ""
+            ]
         },
         {
             "name": "loading",
@@ -325,14 +304,12 @@
                 "loading-indicator"
             ],
             "components": [
-                "UnityEngine.UI.Image",
-                "UnityEngine.UI.Graphic",
-                "HMUI.ImageView",
                 "UnityEngine.UI.LayoutElement",
+                "UnityEngine.UI.Graphic",
+                "UnityEngine.UI.Image",
+                "HMUI.ImageView",
                 "UnityEngine.RectTransform"
-            ],
-            "description": "A loading indicator",
-            "since": ""
+            ]
         },
         {
             "name": "modal",
@@ -340,11 +317,10 @@
                 "modal"
             ],
             "components": [
+                "UnityEngine.UI.Graphic",
                 "BSML.ModalView",
                 "UnityEngine.RectTransform"
-            ],
-            "description": "Make some UI that is used like a pop-up, meaning it's not visible by default and can be shown whenever you need or want to",
-            "since": ""
+            ]
         },
         {
             "name": "modal-color-picker",
@@ -352,12 +328,11 @@
                 "modal-color-picker"
             ],
             "components": [
+                "UnityEngine.UI.Graphic",
                 "BSML.ModalColorPicker",
                 "BSML.ModalView",
                 "UnityEngine.RectTransform"
-            ],
-            "description": "Pick a color using a modal pop-up",
-            "since": ""
+            ]
         },
         {
             "name": "modal-keyboard",
@@ -365,12 +340,11 @@
                 "modal-keyboard"
             ],
             "components": [
+                "UnityEngine.UI.Graphic",
                 "BSML.ModalKeyboard",
                 "BSML.ModalView",
                 "UnityEngine.RectTransform"
-            ],
-            "description": "Enter a string using a keyboard pop-up",
-            "since": ""
+            ]
         },
         {
             "name": "modifier",
@@ -380,16 +354,14 @@
             ],
             "components": [
                 "BSML.BaseSetting",
-                "UnityEngine.UI.Image",
-                "UnityEngine.UI.Graphic",
-                "HMUI.ImageView",
                 "UnityEngine.UI.LayoutElement",
+                "UnityEngine.UI.Graphic",
+                "UnityEngine.UI.Image",
+                "HMUI.ImageView",
                 "UnityEngine.RectTransform",
                 "UnityEngine.UI.Selectable",
                 "TMPro.TextMeshProUGUI"
-            ],
-            "description": "A copy of the modifier toggles in the gameplay menu on the left",
-            "since": ""
+            ]
         },
         {
             "name": "modifier-container",
@@ -397,15 +369,13 @@
                 "modifier-container"
             ],
             "components": [
-                "BSML.Backgroundable",
+                "UnityEngine.UI.LayoutElement",
                 "UnityEngine.UI.ContentSizeFitter",
                 "UnityEngine.UI.HorizontalOrVerticalLayoutGroup",
-                "UnityEngine.UI.LayoutElement",
+                "BSML.Backgroundable",
                 "UnityEngine.UI.LayoutGroup",
                 "UnityEngine.RectTransform"
-            ],
-            "description": "A container made to fit the gameplay menu on the left",
-            "since": ""
+            ]
         },
         {
             "name": "text-page",
@@ -414,11 +384,10 @@
                 "page"
             ],
             "components": [
+                "UnityEngine.UI.Graphic",
                 "UnityEngine.RectTransform",
                 "TMPro.TextMeshProUGUI"
-            ],
-            "description": "A scrollable container perfect for large quantities of text",
-            "since": ""
+            ]
         },
         {
             "name": "page-button",
@@ -427,16 +396,28 @@
                 "pg-button"
             ],
             "components": [
-                "UnityEngine.UI.Button",
-                "BSML.ButtonIconImage",
-                "UnityEngine.UI.ContentSizeFitter",
                 "UnityEngine.UI.LayoutElement",
+                "UnityEngine.UI.ContentSizeFitter",
+                "UnityEngine.UI.Graphic",
                 "BSML.PageButton",
                 "UnityEngine.RectTransform",
-                "UnityEngine.UI.Selectable"
+                "UnityEngine.UI.Selectable",
+                "UnityEngine.UI.Button",
+                "BSML.ButtonIconImage"
+            ]
+        },
+        {
+            "name": "progress-bar",
+            "aliases": [
+                "progress-bar"
             ],
-            "description": "A button perfect for scrolling up/down scrollviews or lists, since it's an arrow",
-            "since": ""
+            "components": [
+                "UnityEngine.UI.Graphic",
+                "UnityEngine.UI.Image",
+                "BSML.ProgressBar",
+                "UnityEngine.RectTransform",
+                "TMPro.TextMeshProUGUI"
+            ]
         },
         {
             "name": "raw-image",
@@ -446,11 +427,10 @@
             ],
             "components": [
                 "UnityEngine.UI.LayoutElement",
+                "UnityEngine.UI.Graphic",
                 "UnityEngine.UI.RawImage",
                 "UnityEngine.RectTransform"
-            ],
-            "description": "Display a raw texture",
-            "since": ""
+            ]
         },
         {
             "name": "scroll-indicator",
@@ -459,14 +439,12 @@
                 "vertical-scroll-indicator"
             ],
             "components": [
-                "UnityEngine.UI.Image",
                 "UnityEngine.UI.Graphic",
+                "UnityEngine.UI.Image",
                 "HMUI.ImageView",
                 "UnityEngine.RectTransform",
                 "BSML.ScrollIndicator"
-            ],
-            "description": "Indicate scrolling progress",
-            "since": ""
+            ]
         },
         {
             "name": "scroll-view",
@@ -474,13 +452,11 @@
                 "scroll-view"
             ],
             "components": [
-                "UnityEngine.UI.HorizontalOrVerticalLayoutGroup",
                 "UnityEngine.UI.LayoutElement",
+                "UnityEngine.UI.HorizontalOrVerticalLayoutGroup",
                 "UnityEngine.UI.LayoutGroup",
                 "UnityEngine.RectTransform"
-            ],
-            "description": "A container that can scroll through the content you define",
-            "since": ""
+            ]
         },
         {
             "name": "scrollable-container",
@@ -488,15 +464,13 @@
                 "scrollable-container"
             ],
             "components": [
+                "UnityEngine.UI.LayoutElement",
                 "UnityEngine.UI.ContentSizeFitter",
                 "UnityEngine.UI.HorizontalOrVerticalLayoutGroup",
-                "UnityEngine.UI.LayoutElement",
                 "UnityEngine.UI.LayoutGroup",
                 "UnityEngine.RectTransform",
                 "BSML.ScrollableContainer"
-            ],
-            "description": "A container that can scroll through the content you define, but doesn't come with a scroll indicator by default",
-            "since": ""
+            ]
         },
         {
             "name": "settings-scroll-view",
@@ -506,22 +480,23 @@
                 "settings-container"
             ],
             "components": [
-                "UnityEngine.UI.HorizontalOrVerticalLayoutGroup",
                 "UnityEngine.UI.LayoutElement",
+                "UnityEngine.UI.HorizontalOrVerticalLayoutGroup",
                 "UnityEngine.UI.LayoutGroup",
                 "UnityEngine.RectTransform"
-            ],
-            "description": "An expanded scroll view, but resized in the vertical direction",
-            "since": ""
+            ]
         },
         {
             "name": "settings-submenu",
             "aliases": [
                 "settings-submenu"
             ],
-            "components": [],
-            "description": "A container that's used on PC for settings related things, but not supported on the quest version of BSML, will yield an empty gameObject!",
-            "since": ""
+            "components": [
+                "BSML.ClickableText",
+                "UnityEngine.UI.Graphic",
+                "UnityEngine.RectTransform",
+                "TMPro.TextMeshProUGUI"
+            ]
         },
         {
             "name": "slider-setting",
@@ -531,12 +506,11 @@
             "components": [
                 "BSML.BaseSetting",
                 "UnityEngine.UI.LayoutElement",
+                "UnityEngine.UI.Graphic",
                 "UnityEngine.RectTransform",
                 "BSML.SliderSetting",
                 "TMPro.TextMeshProUGUI"
-            ],
-            "description": "Configure a numeric value with a slider, buttons optional",
-            "since": ""
+            ]
         },
         {
             "name": "stack",
@@ -544,28 +518,12 @@
                 "stack"
             ],
             "components": [
-                "BSML.Backgroundable",
-                "UnityEngine.UI.ContentSizeFitter",
                 "UnityEngine.UI.LayoutElement",
+                "UnityEngine.UI.ContentSizeFitter",
+                "BSML.Backgroundable",
                 "UnityEngine.UI.LayoutGroup",
                 "UnityEngine.RectTransform"
-            ],
-            "description": "A stack layout, used to stack things on top of eachother in the Z direction",
-            "since": ""
-        },
-        {
-            "name": "text-field",
-            "aliases": [
-                "text-field"
-            ],
-            "components": [
-                "UnityEngine.UI.LayoutElement",
-                "UnityEngine.RectTransform",
-                "HMUI.InputFieldView",
-                "TMPro.TextMeshProUGUI"
-            ],
-            "description": "Configure a string value, comes with the base game keyboard!",
-            "since": "0.3.0"
+            ]
         },
         {
             "name": "string-setting",
@@ -575,13 +533,12 @@
             "components": [
                 "BSML.BaseSetting",
                 "UnityEngine.UI.LayoutElement",
+                "UnityEngine.UI.Graphic",
                 "BSML.ModalKeyboard",
                 "BSML.ModalView",
                 "UnityEngine.RectTransform",
                 "TMPro.TextMeshProUGUI"
-            ],
-            "description": "Configure a string value, comes with it's own keyboard!",
-            "since": ""
+            ]
         },
         {
             "name": "tab",
@@ -589,13 +546,11 @@
                 "tab"
             ],
             "components": [
-                "BSML.Backgroundable",
                 "UnityEngine.UI.ContentSizeFitter",
+                "BSML.Backgroundable",
                 "UnityEngine.RectTransform",
                 "BSML.Tab"
-            ],
-            "description": "Used with the tab selector, tag it right and you can switch between seperate tabs in your UI",
-            "since": ""
+            ]
         },
         {
             "name": "tab-select",
@@ -604,14 +559,26 @@
                 "tab-selector"
             ],
             "components": [
+                "HMUI.TextSegmentedControl",
                 "UnityEngine.UI.HorizontalOrVerticalLayoutGroup",
                 "UnityEngine.UI.LayoutGroup",
                 "UnityEngine.RectTransform",
-                "BSML.TabSelector",
-                "HMUI.TextSegmentedControl"
+                "BSML.TabSelector"
+            ]
+        },
+        {
+            "name": "text-field",
+            "aliases": [
+                "text-field"
             ],
-            "description": "Used with tabs, tag it right and you can switch between seperate tabs in your UI",
-            "since": ""
+            "components": [
+                "UnityEngine.UI.LayoutElement",
+                "UnityEngine.UI.Graphic",
+                "HMUI.InputFieldView",
+                "UnityEngine.RectTransform",
+                "UnityEngine.UI.Selectable",
+                "TMPro.TextMeshProUGUI"
+            ]
         },
         {
             "name": "text-segments",
@@ -619,13 +586,11 @@
                 "text-segments"
             ],
             "components": [
+                "HMUI.TextSegmentedControl",
                 "UnityEngine.UI.HorizontalOrVerticalLayoutGroup",
                 "UnityEngine.UI.LayoutGroup",
-                "UnityEngine.RectTransform",
-                "HMUI.TextSegmentedControl"
-            ],
-            "description": "A copy of the difficulty selector in the song selection menu, switch between values using text",
-            "since": ""
+                "UnityEngine.RectTransform"
+            ]
         },
         {
             "name": "vertical",
@@ -633,15 +598,13 @@
                 "vertical"
             ],
             "components": [
-                "BSML.Backgroundable",
+                "UnityEngine.UI.LayoutElement",
                 "UnityEngine.UI.ContentSizeFitter",
                 "UnityEngine.UI.HorizontalOrVerticalLayoutGroup",
-                "UnityEngine.UI.LayoutElement",
+                "BSML.Backgroundable",
                 "UnityEngine.UI.LayoutGroup",
                 "UnityEngine.RectTransform"
-            ],
-            "description": "A vertical layout, all it's children will be laid out vertically",
-            "since": ""
+            ]
         },
         {
             "name": "vertical-icon-segments",
@@ -649,29 +612,14 @@
                 "vertical-icon-segments"
             ],
             "components": [
+                "UnityEngine.UI.Graphic",
                 "UnityEngine.UI.HorizontalOrVerticalLayoutGroup",
                 "HMUI.IconSegmentedControl",
                 "UnityEngine.UI.Image",
-                "UnityEngine.UI.Graphic",
                 "HMUI.ImageView",
                 "UnityEngine.UI.LayoutGroup",
                 "UnityEngine.RectTransform"
-            ],
-            "description": "A copy of the leaderboard locality selector, choose an option with icons, but vertically",
-            "since": ""
-        },
-        {
-            "name": "gradient-text",
-            "aliases": [
-                "gradient-text"
-            ],
-            "components": [
-                "BSML.TextGradientUpdater",
-                "UnityEngine.RectTransform",
-                "TMPro.TextMeshProUGUI"
-            ],
-            "description": "Display some text using a gradient as the color, optionally scrolling the gradient",
-            "since": "0.2.8"
+            ]
         }
     ],
     "macros": [
@@ -685,12 +633,9 @@
                     "key": "host",
                     "aliases": [
                         "host"
-                    ],
-                    "description": "The host Object",
-                    "type": "BSMLValue ID (Il2CppObject*)"
+                    ]
                 }
-            ],
-            "description": "Parse the child nodes with a different host object"
+            ]
         },
         {
             "name": "macro.define",
@@ -703,20 +648,15 @@
                     "aliases": [
                         "name",
                         "id"
-                    ],
-                    "description": "the ID of the value",
-                    "type": "BSMLValue ID (StringW)"
+                    ]
                 },
                 {
                     "key": "value",
                     "aliases": [
                         "value"
-                    ],
-                    "description": "the value of the value",
-                    "type": "string"
+                    ]
                 }
-            ],
-            "description": "Define a BSML string value, or set it"
+            ]
         },
         {
             "name": "macro.for-each",
@@ -729,20 +669,15 @@
                     "aliases": [
                         "hosts",
                         "items"
-                    ],
-                    "description": "The Host list value",
-                    "type": "BSMLValue ID (List<Il2CppObject*>*)"
+                    ]
                 },
                 {
                     "key": "passTags",
                     "aliases": [
                         "pass-back-tags"
-                    ],
-                    "description": "Whether or not to also pass the tags to the parent BSMLParams",
-                    "type": "bool"
+                    ]
                 }
-            ],
-            "description": "Use the child nodes for every host object in the given list"
+            ]
         },
         {
             "name": "macro.if",
@@ -755,12 +690,9 @@
                     "aliases": [
                         "bool",
                         "value"
-                    ],
-                    "description": "BSMLValue id",
-                    "type": "BSMLValue ID (bool)"
+                    ]
                 }
-            ],
-            "description": "Use the child nodes depending on the given value"
+            ]
         },
         {
             "name": "macro.print",
@@ -774,12 +706,9 @@
                     "aliases": [
                         "text",
                         "string"
-                    ],
-                    "description": "The text to print",
-                    "type": "string"
+                    ]
                 }
-            ],
-            "description": "Print some text to the adb log"
+            ]
         },
         {
             "name": "macro.reparent",
@@ -791,20 +720,15 @@
                     "key": "transform",
                     "aliases": [
                         "transform"
-                    ],
-                    "description": "ID of the value that contains the transform",
-                    "type": "BSMLValue ID (Transform*)"
+                    ]
                 },
                 {
                     "key": "transforms",
                     "aliases": [
                         "transforms"
-                    ],
-                    "description": "ID of the value that contains the list of transforms",
-                    "type": "BSMLValue ID (List<Transform*>*)"
+                    ]
                 }
-            ],
-            "description": "Reparent existing transform or transforms into the hierarchy"
+            ]
         },
         {
             "name": "macro.repeat",
@@ -818,20 +742,15 @@
                         "i",
                         "count",
                         "number"
-                    ],
-                    "description": "the amount of times to repeat the child nodes",
-                    "type": "int"
+                    ]
                 },
                 {
                     "key": "passTags",
                     "aliases": [
                         "pass-back-tags"
-                    ],
-                    "description": "whether or not to pass the tags",
-                    "type": "bool"
+                    ]
                 }
-            ],
-            "description": "Repeat the child nodes an amount of times"
+            ]
         }
     ],
     "components": [
@@ -842,1488 +761,90 @@
                     "key": "applyOnChange",
                     "aliases": [
                         "apply-on-change"
-                    ],
-                    "description": "Whether or not to apply the value immediately when it changes",
-                    "type": "bool"
+                    ]
+                },
+                {
+                    "key": "getEvent",
+                    "aliases": [
+                        "get-event"
+                    ]
                 },
                 {
                     "key": "id",
                     "aliases": [
                         "id"
-                    ],
-                    "description": "The ID of the component",
-                    "type": "string"
+                    ]
                 },
                 {
                     "key": "onChange",
                     "aliases": [
                         "on-change"
-                    ],
-                    "description": "A BSMLAction id to run when the value changes",
-                    "type": "BSMLAction ID (void(T))"
+                    ]
+                },
+                {
+                    "key": "setEvent",
+                    "aliases": [
+                        "set-event"
+                    ]
                 },
                 {
                     "key": "value",
                     "aliases": [
                         "value"
-                    ],
-                    "description": "The ID of the value to change",
-                    "type": "BSMLValue ID (T)"
+                    ]
                 }
-            ],
-            "description": "A component that BSML uses to identify settings, so it knows where to look for values to set"
-        },
-        {
-            "typename": "BSML.Backgroundable",
-            "properties": [
-                {
-                    "key": "background",
-                    "aliases": [
-                        "bg",
-                        "background"
-                    ],
-                    "description": "The name of the background sprite to use",
-                    "type": "string"
-                },
-                {
-                    "key": "backgroundAlpha",
-                    "aliases": [
-                        "bg-alpha",
-                        "background-alpha"
-                    ],
-                    "description": "Value for how transparent the background is",
-                    "type": "float"
-                },
-                {
-                    "key": "backgroundColor",
-                    "aliases": [
-                        "bg-color",
-                        "background-color"
-                    ],
-                    "description": "Color value of the background",
-                    "type": "HTML Color String"
-                },
-                {
-                    "key": "backgroundColor0",
-                    "aliases": [
-                        "bg-color0",
-                        "background-color0"
-                    ],
-                    "description": "Color0 value for the background gradient",
-                    "type": "HTML Color String"
-                },
-                {
-                    "key": "backgroundColor1",
-                    "aliases": [
-                        "bg-color1",
-                        "background-color1"
-                    ],
-                    "description": "Color1 value for the background gradient",
-                    "type": "HTML Color String"
-                }
-            ],
-            "description": "This component handles setting the background imageviews on layouts"
-        },
-        {
-            "typename": "UnityEngine.UI.Button",
-            "properties": [
-                {
-                    "key": "clickEvent",
-                    "aliases": [
-                        "click-event",
-                        "event-click"
-                    ],
-                    "description": "The event to run when the button is clicked (not supported)",
-                    "type": "-"
-                },
-                {
-                    "key": "onClick",
-                    "aliases": [
-                        "on-click"
-                    ],
-                    "description": "BSMLAction id to run when the button is clicked",
-                    "type": "BSMLAction ID (void(void))"
-                }
-            ],
-            "description": "The button component from Unity"
-        },
-        {
-            "typename": "BSML.ButtonIconImage",
-            "properties": [
-                {
-                    "key": "icon",
-                    "aliases": [
-                        "icon"
-                    ],
-                    "description": "Image source for the icon",
-                    "type": "string"
-                }
-            ],
-            "description": "Component to handle setting the image on icon buttons"
-        },
-        {
-            "typename": "BSML.ClickableImage",
-            "properties": [
-                {
-                    "key": "clickEvent",
-                    "aliases": [
-                        "click-event",
-                        "event-click"
-                    ],
-                    "description": "The event to run when the image is clicked (not supported)",
-                    "type": "-"
-                },
-                {
-                    "key": "defaultColor",
-                    "aliases": [
-                        "default-color"
-                    ],
-                    "description": "The color the image is when it's not hovered",
-                    "type": "HTML Color String"
-                },
-                {
-                    "key": "highlightColor",
-                    "aliases": [
-                        "highlight-color"
-                    ],
-                    "description": "The color the image becomes when it gets hovered",
-                    "type": "HTML Color String"
-                },
-                {
-                    "key": "onClick",
-                    "aliases": [
-                        "on-click"
-                    ],
-                    "description": "BSMLAction id to run when the button is clicked",
-                    "type": "BSMLAction ID (void(void))"
-                }
-            ],
-            "description": "A component to make a Clickable ImageView within the Beat Saber UI"
-        },
-        {
-            "typename": "BSML.ClickableText",
-            "properties": [
-                {
-                    "key": "clickEvent",
-                    "aliases": [
-                        "click-event",
-                        "event-click"
-                    ],
-                    "description": "The event to run when the image is clicked (not supported)",
-                    "type": "-"
-                },
-                {
-                    "key": "defaultColor",
-                    "aliases": [
-                        "default-color"
-                    ],
-                    "description": "The color the text is when it's not hovered",
-                    "type": "HTML Color String"
-                },
-                {
-                    "key": "highlightColor",
-                    "aliases": [
-                        "highlight-color"
-                    ],
-                    "description": "The color the text is when it gets hovered",
-                    "type": "HTML Color String"
-                },
-                {
-                    "key": "onClick",
-                    "aliases": [
-                        "on-click"
-                    ],
-                    "description": "BSMLAction id to run when the text is clicked",
-                    "type": "BSMLAction ID (void(void))"
-                }
-            ],
-            "description": "A component to make a Clickable TextMeshProUGUI within the Beat Saber UI"
-        },
-        {
-            "typename": "UnityEngine.UI.ContentSizeFitter",
-            "properties": [
-                {
-                    "key": "horizontalFit",
-                    "aliases": [
-                        "horizontal-fit"
-                    ],
-                    "description": "Fit mode used to determine the width",
-                    "type": "enum ContentSizeFitter::Fitmode"
-                },
-                {
-                    "key": "verticalFit",
-                    "aliases": [
-                        "vertical-fit"
-                    ],
-                    "description": "Fit mode used to determine the height",
-                    "type": "enum ContentSizeFitter::Fitmode"
-                }
-            ],
-            "description": "Component to resize a RectTransform to fit it's content"
-        },
-        {
-            "typename": "BSML.CustomCellListTableData",
-            "properties": [
-                {
-                    "key": "alignCenter",
-                    "aliases": [
-                        "align-to-center"
-                    ],
-                    "description": "Whether or not to align the cells to the center",
-                    "type": "bool"
-                },
-                {
-                    "key": "cellClickable",
-                    "aliases": [
-                        "clickable-cells"
-                    ],
-                    "description": "Whether or not hte cells are clickable",
-                    "type": "bool"
-                },
-                {
-                    "key": "cellSize",
-                    "aliases": [
-                        "cell-size"
-                    ],
-                    "description": "The size of the cells",
-                    "type": "float"
-                },
-                {
-                    "key": "cellTemplate",
-                    "aliases": [
-                        "_children"
-                    ],
-                    "description": "not used",
-                    "type": "-"
-                },
-                {
-                    "key": "data",
-                    "aliases": [
-                        "contents",
-                        "data"
-                    ],
-                    "description": "List of objects used for the content of the list",
-                    "type": "BSMLValue ID (List<Il2CppObject*>*)"
-                },
-                {
-                    "key": "id",
-                    "aliases": [
-                        "id"
-                    ],
-                    "description": "The ID of the component",
-                    "type": "string"
-                },
-                {
-                    "key": "listDirection",
-                    "aliases": [
-                        "list-direction"
-                    ],
-                    "description": "Whether or not the list is vertical or horizontal",
-                    "type": "enum TableView::TableType"
-                },
-                {
-                    "key": "listHeight",
-                    "aliases": [
-                        "list-height"
-                    ],
-                    "description": "List height, only relevant for horizontal lists",
-                    "type": "float"
-                },
-                {
-                    "key": "listWidth",
-                    "aliases": [
-                        "list-width"
-                    ],
-                    "description": "List width, only relevant for vertical lists",
-                    "type": "float"
-                },
-                {
-                    "key": "selectCell",
-                    "aliases": [
-                        "select-cell"
-                    ],
-                    "description": "BSMLAction id to run when a cell is selected",
-                    "type": "BSMLAction ID (void(TableView*, int))"
-                },
-                {
-                    "key": "showScrollbar",
-                    "aliases": [
-                        "show-scrollbar"
-                    ],
-                    "description": "Whether or not to show a scroll bar",
-                    "type": "bool"
-                },
-                {
-                    "key": "stickScrolling",
-                    "aliases": [
-                        "stick-scrolling"
-                    ],
-                    "description": "Whether or not to allow scrolling using a stick",
-                    "type": "bool"
-                },
-                {
-                    "key": "visibleCells",
-                    "aliases": [
-                        "visible-cells"
-                    ],
-                    "description": "How many cells long / wide to make the list",
-                    "type": "int"
-                }
-            ],
-            "description": "A component from BSML to make a custom cell table"
-        },
-        {
-            "typename": "BSML.CustomListTableData",
-            "properties": [
-                {
-                    "key": "alignCenter",
-                    "aliases": [
-                        "align-to-center"
-                    ],
-                    "description": "Whether or not to align the cells to the center",
-                    "type": "bool"
-                },
-                {
-                    "key": "cellSize",
-                    "aliases": [
-                        "cell-size"
-                    ],
-                    "description": "Whether or not the cells are clickable",
-                    "type": "float"
-                },
-                {
-                    "key": "data",
-                    "aliases": [
-                        "data",
-                        "content"
-                    ],
-                    "description": "List of BSML::CustomCellInfo to use for the content of the list",
-                    "type": "BSMLValue ID (List<BSML::CustomCellInfo*>*)"
-                },
-                {
-                    "key": "expandCell",
-                    "aliases": [
-                        "expand-cell"
-                    ],
-                    "description": "Whether or not to expand the cell to allow for longer text, only relevant for List style",
-                    "type": "bool"
-                },
-                {
-                    "key": "id",
-                    "aliases": [
-                        "id"
-                    ],
-                    "description": "The ID of the component",
-                    "type": "string"
-                },
-                {
-                    "key": "listDirection",
-                    "aliases": [
-                        "list-direction"
-                    ],
-                    "description": "Whether or not the list is vertical or horizontal",
-                    "type": "enum TableView::TableType"
-                },
-                {
-                    "key": "listHeight",
-                    "aliases": [
-                        "list-height"
-                    ],
-                    "description": "List height, only relevant for horizontal lists",
-                    "type": "float"
-                },
-                {
-                    "key": "listStyle",
-                    "aliases": [
-                        "list-style"
-                    ],
-                    "description": "The style of the list",
-                    "type": "enum CustomListTableData::ListStyle"
-                },
-                {
-                    "key": "listWidth",
-                    "aliases": [
-                        "list-width"
-                    ],
-                    "description": "List width, only relevant for horizontal lists",
-                    "type": "float"
-                },
-                {
-                    "key": "selectCell",
-                    "aliases": [
-                        "select-cell"
-                    ],
-                    "description": "BSMLAction id to run when a cell is selected",
-                    "type": "BSMLAction ID (void(TableView*, int))"
-                },
-                {
-                    "key": "showScrollbar",
-                    "aliases": [
-                        "show-scrollbar"
-                    ],
-                    "description": "Whether or not to show a scroll bar",
-                    "type": "bool"
-                },
-                {
-                    "key": "stickScrolling",
-                    "aliases": [
-                        "stick-scrolling"
-                    ],
-                    "description": "Whether or not to allow scrolling with the sticks",
-                    "type": "bool"
-                },
-                {
-                    "key": "visibleCells",
-                    "aliases": [
-                        "visible-cells"
-                    ],
-                    "description": "How many cells long / wide to make the list",
-                    "type": "int"
-                }
-            ],
-            "description": "A component from BSML to make a base game list"
-        },
-        {
-            "typename": "UnityEngine.UI.GridLayoutGroup",
-            "properties": [
-                {
-                    "key": "cellSizeX",
-                    "aliases": [
-                        "cell-size-x"
-                    ],
-                    "description": "The size of cells in the horizontal direction",
-                    "type": "float"
-                },
-                {
-                    "key": "cellSizeY",
-                    "aliases": [
-                        "cell-size-y"
-                    ],
-                    "description": "The size of cells in the vertical direction",
-                    "type": "float"
-                },
-                {
-                    "key": "spacingX",
-                    "aliases": [
-                        "spacing-x"
-                    ],
-                    "description": "The spacing of cells in the horizontal direction",
-                    "type": "float"
-                },
-                {
-                    "key": "spacingY",
-                    "aliases": [
-                        "spacing-y"
-                    ],
-                    "description": "The spacing of cells in the vertical direction",
-                    "type": "float"
-                }
-            ],
-            "description": "A component from unity to define a grid layout"
-        },
-        {
-            "typename": "UnityEngine.UI.HorizontalOrVerticalLayoutGroup",
-            "properties": [
-                {
-                    "key": "childControlHeight",
-                    "aliases": [
-                        "child-control-height"
-                    ],
-                    "description": "True if the layoutGroup should control the height of it's children, false if they decide themselves",
-                    "type": "bool"
-                },
-                {
-                    "key": "childControlWidth",
-                    "aliases": [
-                        "child-control-width"
-                    ],
-                    "description": "True if the layoutGroup should control the width of its children, false if they decide themselves",
-                    "type": "bool"
-                },
-                {
-                    "key": "childForceExpandHeight",
-                    "aliases": [
-                        "child-expand-height"
-                    ],
-                    "description": "True if children should be forced to fill the additionally available vertical space, false if not",
-                    "type": "bool"
-                },
-                {
-                    "key": "childForceExpandWidth",
-                    "aliases": [
-                        "child-expand-width"
-                    ],
-                    "description": "True if children should be forced to fill the additionally available horizontal space, false if not",
-                    "type": "bool"
-                },
-                {
-                    "key": "spacing",
-                    "aliases": [
-                        "spacing"
-                    ],
-                    "description": "The spacing between elements in the group",
-                    "type": "float"
-                }
-            ],
-            "description": "A component from unity to abstract a Horizontal or Vertical layout"
-        },
-        {
-            "typename": "HMUI.InputFieldView",
-            "properties": [
-                {
-                    "key": "onChange",
-                    "aliases": [
-                        "on-change"
-                    ],
-                    "description": "BSMLAction id to run when the text changes",
-                    "type": "BSMLAction ID (void(StringW))"
-                },
-                {
-                    "key": "textLengthLimit",
-                    "aliases": [
-                        "text-length-limit"
-                    ],
-                    "description": "Max length of the string",
-                    "type": "int"
-                }
-            ],
-            "description": "A Beat Saber UI Component used to input text"
-        },
-        {
-            "typename": "HMUI.IconSegmentedControl",
-            "properties": [
-                {
-                    "key": "data",
-                    "aliases": [
-                        "contents",
-                        "data"
-                    ],
-                    "description": "List of IconSegmentedControl::DataItem to use for the content",
-                    "type": "BSMLValue ID (List<IconSegmentedControl::DataItem*>*)"
-                },
-                {
-                    "key": "selectCell",
-                    "aliases": [
-                        "select-cell",
-                        "cell-select"
-                    ],
-                    "description": "BSMLAction id to run when a cell is selected",
-                    "type": "BSMLAction ID (void(SegmentedControl*, int))"
-                }
-            ],
-            "description": "A Beat Saber UI Component used to let the user choose between different icons (Characteristic selector)"
-        },
-        {
-            "typename": "UnityEngine.UI.Image",
-            "properties": [
-                {
-                    "key": "image",
-                    "aliases": [
-                        "source",
-                        "src"
-                    ],
-                    "description": "The image to display",
-                    "type": "string"
-                },
-                {
-                    "key": "imageColor",
-                    "aliases": [
-                        "image-color",
-                        "img-color"
-                    ],
-                    "description": "The color of the image",
-                    "type": "HTML Color String"
-                },
-                {
-                    "key": "preserveAspect",
-                    "aliases": [
-                        "preserve-aspect"
-                    ],
-                    "description": "Whether or not to preserve the aspect ratio of the image",
-                    "type": "bool"
-                }
-            ],
-            "description": "A unity Component to display a Sprite in UI"
-        },
-        {
-            "typename": "UnityEngine.UI.Graphic",
-            "properties": [
-                {
-                    "key": "raycastPadding",
-                    "aliases": [
-                        "raycast-padding"
-                    ],
-                    "description": "Padding for the raycast target",
-                    "type": "Vector4"
-                },
-                {
-                    "key": "raycastTarget",
-                    "aliases": [
-                        "raycast-target"
-                    ],
-                    "description": "Whether this graphic should be a raycast target",
-                    "type": "bool"
-                }
-            ],
-            "description": "A unity Component to display a Sprite in UI"
-        },
-        {
-            "typename": "HMUI.ImageView",
-            "properties": [
-                {
-                    "key": "skew",
-                    "aliases": [
-                        "skew"
-                    ],
-                    "description": "How much skew should the image have (BS uses 0.18 by default)",
-                    "type": "float"
-                }
-            ],
-            "description": "A Beat Saber UI component to wrap an Image"
+            ]
         },
         {
             "typename": "UnityEngine.UI.LayoutElement",
             "properties": [
                 {
-                    "key": "ignoreLayout",
-                    "aliases": [
-                        "ignore-layout"
-                    ],
-                    "description": "Whether or not the layout system should ignore the layoutelement",
-                    "type": "bool"
-                },
-                {
-                    "key": "minHeight",
-                    "aliases": [
-                        "min-height"
-                    ],
-                    "description": "The minimum height that should be allocated for this element",
-                    "type": "float"
-                },
-                {
-                    "key": "minWidth",
-                    "aliases": [
-                        "min-width"
-                    ],
-                    "description": "The minimum width that should be allocated for this element",
-                    "type": "float"
-                },
-                {
-                    "key": "preferredHeight",
-                    "aliases": [
-                        "preferred-height",
-                        "pref-height"
-                    ],
-                    "description": "the preferred height this element should be if there is enough space",
-                    "type": "float"
-                },
-                {
-                    "key": "preferredWidth",
-                    "aliases": [
-                        "preferred-width",
-                        "pref-width"
-                    ],
-                    "description": "The preferred width this element should be if there is enough space",
-                    "type": "float"
-                },
-                {
                     "key": "flexibleHeight",
                     "aliases": [
                         "flexible-height",
                         "flex-height"
-                    ],
-                    "description": "the flexible height this element should be if there is enough space",
-                    "type": "float"
+                    ]
                 },
                 {
                     "key": "flexibleWidth",
                     "aliases": [
                         "flexible-width",
                         "flex-width"
-                    ],
-                    "description": "The flexible width this element should be if there is enough space",
-                    "type": "float"
+                    ]
+                },
+                {
+                    "key": "ignoreLayout",
+                    "aliases": [
+                        "ignore-layout"
+                    ]
+                },
+                {
+                    "key": "minHeight",
+                    "aliases": [
+                        "min-height"
+                    ]
+                },
+                {
+                    "key": "minWidth",
+                    "aliases": [
+                        "min-width"
+                    ]
+                },
+                {
+                    "key": "preferredHeight",
+                    "aliases": [
+                        "preferred-height",
+                        "pref-height"
+                    ]
+                },
+                {
+                    "key": "preferredWidth",
+                    "aliases": [
+                        "preferred-width",
+                        "pref-width"
+                    ]
                 }
-            ],
-            "description": "A component to automatically layout a gameObject within UI"
-        },
-        {
-            "typename": "UnityEngine.UI.LayoutGroup",
-            "properties": [
-                {
-                    "key": "childAlign",
-                    "aliases": [
-                        "child-align"
-                    ],
-                    "description": "The alignment used for children of this group",
-                    "type": "enum UnityEngine::TextAnchor"
-                },
-                {
-                    "key": "pad",
-                    "aliases": [
-                        "pad"
-                    ],
-                    "description": "The padding for this layout",
-                    "type": "int"
-                },
-                {
-                    "key": "padBottom",
-                    "aliases": [
-                        "pad-bottom"
-                    ],
-                    "description": "Bottom padding",
-                    "type": "int"
-                },
-                {
-                    "key": "padLeft",
-                    "aliases": [
-                        "pad-left"
-                    ],
-                    "description": "Left padding",
-                    "type": "int"
-                },
-                {
-                    "key": "padRight",
-                    "aliases": [
-                        "pad-right"
-                    ],
-                    "description": "Right padding",
-                    "type": "int"
-                },
-                {
-                    "key": "padTop",
-                    "aliases": [
-                        "pad-top"
-                    ],
-                    "description": "Top padding",
-                    "type": "int"
-                }
-            ],
-            "description": "A base class for all layout groups"
-        },
-        {
-            "typename": "LeaderboardTableView",
-            "properties": [
-                {
-                    "key": "cellSize",
-                    "aliases": [
-                        "cell-size"
-                    ],
-                    "description": "How big the cells should be",
-                    "type": "float"
-                }
-            ],
-            "description": "The Beat Saber Leaderboard tableview"
-        },
-        {
-            "typename": "BSML.ModalColorPicker",
-            "properties": [
-                {
-                    "key": "onCancel",
-                    "aliases": [
-                        "on-cancel"
-                    ],
-                    "description": "BSMLAction id to run when cancel is pressed",
-                    "type": "BSMLAction ID (void(void))"
-                },
-                {
-                    "key": "onChange",
-                    "aliases": [
-                        "color-change"
-                    ],
-                    "description": "BSMLAction id to run when the value changes",
-                    "type": "BSMLAction ID (void(Color))"
-                },
-                {
-                    "key": "onDone",
-                    "aliases": [
-                        "on-done"
-                    ],
-                    "description": "BSM:Action id to run when done is pressed",
-                    "type": "BSMLAction ID (void(Color))"
-                },
-                {
-                    "key": "value",
-                    "aliases": [
-                        "value"
-                    ],
-                    "description": "BSMLValue id of the value to change",
-                    "type": "BSMLValue ID (Color)"
-                }
-            ],
-            "description": "A BSML component used to pick colors"
-        },
-        {
-            "typename": "BSML.ModalKeyboard",
-            "properties": [
-                {
-                    "key": "clearOnOpen",
-                    "aliases": [
-                        "clear-on-open"
-                    ],
-                    "description": "Whether or not to clear the current string on opening the keyboard",
-                    "type": "bool"
-                },
-                {
-                    "key": "onEnter",
-                    "aliases": [
-                        "on-enter"
-                    ],
-                    "description": "BSMLAction id to run when enter is pressed",
-                    "type": "BSMLAction ID (void(StringW))"
-                },
-                {
-                    "key": "value",
-                    "aliases": [
-                        "value"
-                    ],
-                    "description": "BSMLValue id of the value to change",
-                    "type": "BSMLValue ID (StringW)"
-                }
-            ],
-            "description": "A BSML Component used to make a keyboard"
-        },
-        {
-            "typename": "BSML.ModalView",
-            "properties": [
-                {
-                    "key": "clickOffCloses",
-                    "aliases": [
-                        "click-off-closes",
-                        "clickerino-offerino-closerino"
-                    ],
-                    "description": "Whether or not clicking off of the modal closes the modal",
-                    "type": "bool"
-                },
-                {
-                    "key": "hideEvent",
-                    "aliases": [
-                        "hide-event"
-                    ],
-                    "description": "Event to run when the modal hides (not supported)",
-                    "type": "-"
-                },
-                {
-                    "key": "id",
-                    "aliases": [
-                        "id"
-                    ],
-                    "description": "The ID of the component",
-                    "type": "string"
-                },
-                {
-                    "key": "moveToCenter",
-                    "aliases": [
-                        "move-to-center"
-                    ],
-                    "description": "Whether or not to move the modal to the center of the view when it's opened, no matter where it's coming from",
-                    "type": "bool"
-                },
-                {
-                    "key": "showEvent",
-                    "aliases": [
-                        "show-event"
-                    ],
-                    "description": "Event to run when the modal is shown (not supported)",
-                    "type": "-"
-                }
-            ],
-            "description": "A BSML Component to wrap the Beat Saber ModalView"
-        },
-        {
-            "typename": "BSML.PageButton",
-            "properties": [
-                {
-                    "key": "direction",
-                    "aliases": [
-                        "dir",
-                        "direction"
-                    ],
-                    "description": "The direction of the button to set",
-                    "type": "enum PageButtonDirection"
-                }
-            ],
-            "description": "A BSML Component to know if a button is a page button"
-        },
-        {
-            "typename": "UnityEngine.UI.RawImage",
-            "properties": [
-                {
-                    "key": "image",
-                    "aliases": [
-                        "source",
-                        "src"
-                    ],
-                    "description": "The texture to display",
-                    "type": "string"
-                }
-            ],
-            "description": "A Component from Unity to display a raw texture"
-        },
-        {
-            "typename": "UnityEngine.RectTransform",
-            "properties": [
-                {
-                    "key": "active",
-                    "aliases": [
-                        "active"
-                    ],
-                    "description": "Whether or not this object starts enabled",
-                    "type": "bool"
-                },
-                {
-                    "key": "anchorMaxX",
-                    "aliases": [
-                        "anchor-max-x"
-                    ],
-                    "description": "The normalized position in the parent RectTransform that the upper right corner is anchored to",
-                    "type": "float"
-                },
-                {
-                    "key": "anchorMaxY",
-                    "aliases": [
-                        "anchor-max-y"
-                    ],
-                    "description": "The normalized position in the parent RectTransform that the upper right corner is anchored to",
-                    "type": "float"
-                },
-                {
-                    "key": "anchorMax",
-                    "aliases": [
-                        "anchor-max"
-                    ],
-                    "description": "The normalized position in the parent RectTransform that the upper right corner is anchored to",
-                    "type": "Vector2"
-                },
-                {
-                    "key": "anchorMinX",
-                    "aliases": [
-                        "anchor-min-x"
-                    ],
-                    "description": "The normalized position in the parent RectTransform that the lower left corner is anchored to",
-                    "type": "float"
-                },
-                {
-                    "key": "anchorMinY",
-                    "aliases": [
-                        "anchor-min-y"
-                    ],
-                    "description": "The normalized position in the parent RectTransform that the lower left corner is anchored to",
-                    "type": "float"
-                },
-                {
-                    "key": "anchorMin",
-                    "aliases": [
-                        "anchor-min"
-                    ],
-                    "description": "The normalized position in the parent RectTransform that the lower left corner is anchored to",
-                    "type": "Vector2"
-                },
-                {
-                    "key": "anchorPosX",
-                    "aliases": [
-                        "anchor-pos-x"
-                    ],
-                    "description": "The position of the pivot of this RectTransform relative to the anchor reference point",
-                    "type": "float"
-                },
-                {
-                    "key": "anchorPosY",
-                    "aliases": [
-                        "anchor-pos-y"
-                    ],
-                    "description": "The position of the pivot of this RectTransform relative to the anchor reference point",
-                    "type": "float"
-                },
-                {
-                    "key": "anchoredPosition",
-                    "aliases": [
-                        "anchored-position"
-                    ],
-                    "description": "The position of the pivot of this RectTransform relative to the anchor reference point",
-                    "type": "Vector2"
-                },
-                {
-                    "key": "hoverHint",
-                    "aliases": [
-                        "hover-hint"
-                    ],
-                    "description": "The hoverhint to display when this object is hovered",
-                    "type": "string"
-                },
-                {
-                    "key": "hoverHintKey",
-                    "aliases": [
-                        "hover-hint-key"
-                    ],
-                    "description": "The hoverhint Key to use for localization (not supported)",
-                    "type": "string"
-                },
-                {
-                    "key": "pivotX",
-                    "aliases": [
-                        "pivot-x"
-                    ],
-                    "description": "The normalized position in this RectTransform that it rotates around",
-                    "type": "float"
-                },
-                {
-                    "key": "pivotY",
-                    "aliases": [
-                        "pivot-y"
-                    ],
-                    "description": "The normalized position in this RectTransform that it rotates around",
-                    "type": "float"
-                },
-                {
-                    "key": "pivot",
-                    "aliases": [
-                        "pivot"
-                    ],
-                    "description": "The normalized position in this RectTransform that it rotates around",
-                    "type": "Vector2"
-                },
-                {
-                    "key": "sizeDeltaX",
-                    "aliases": [
-                        "size-delta-x"
-                    ],
-                    "description": "The size of this RectTransform relative to the distances between the anchors",
-                    "type": "float"
-                },
-                {
-                    "key": "sizeDeltaY",
-                    "aliases": [
-                        "size-delta-y"
-                    ],
-                    "description": "The size of this RectTransform relative to the distances between the anchors",
-                    "type": "float"
-                },
-                {
-                    "key": "sizeDelta",
-                    "aliases": [
-                        "size-delta"
-                    ],
-                    "description": "The size of this RectTransform relative to the distances between the anchors",
-                    "type": "Vector2"
-                },
-                {
-                    "key": "localScale",
-                    "aliases": [
-                        "local-scale", "scale"
-                    ],
-                    "description": "The localScale of this RectTransform",
-                    "type": "Vector3"
-                }
-            ],
-            "description": "Transform information for UI objects from Unity"
-        },
-        {
-            "typename": "BSML.ScrollIndicator",
-            "properties": [
-                {
-                    "key": "handleColor",
-                    "aliases": [
-                        "handle-color"
-                    ],
-                    "description": "The color of the handle image",
-                    "type": "HTML Color String"
-                },
-                {
-                    "key": "handleImage",
-                    "aliases": [
-                        "handle-image"
-                    ],
-                    "description": "The image for the handle",
-                    "type": "string"
-                }
-            ],
-            "description": "BSML Component that handles making the ScrollIndicator Work"
-        },
-        {
-            "typename": "BSML.ScrollableContainer",
-            "properties": [
-                {
-                    "key": "alignBottom",
-                    "aliases": [
-                        "align-bottom"
-                    ],
-                    "description": "Whether or not to align the bottom of the container with the content",
-                    "type": "bool"
-                },
-                {
-                    "key": "id",
-                    "aliases": [
-                        "id"
-                    ],
-                    "description": "The ID of the component",
-                    "type": "string"
-                },
-                {
-                    "key": "maskOverflow",
-                    "aliases": [
-                        "mask-overflow"
-                    ],
-                    "description": "Whether or not to mask the overflow",
-                    "type": "bool"
-                }
-            ],
-            "description": "BSML Component that makes sure the container can be scrolled correctly"
-        },
-        {
-            "typename": "UnityEngine.UI.Selectable",
-            "properties": [
-                {
-                    "key": "interactable",
-                    "aliases": [
-                        "interactable"
-                    ],
-                    "description": "Whether or not this element is interactable",
-                    "type": "bool"
-                }
-            ],
-            "description": "A Component from Unity that denotes a selectable UI element"
-        },
-        {
-            "typename": "BSML.DropdownListSetting",
-            "properties": [
-                {
-                    "key": "options",
-                    "aliases": [
-                        "options",
-                        "choices"
-                    ],
-                    "description": "BSMLValue id of the Object list to use",
-                    "type": "BSMLValue ID (List<Il2CppObject*>*)"
-                }
-            ],
-            "description": "A BSML Component to use a drop down list"
-        },
-        {
-            "typename": "BSML.IncrementSetting",
-            "properties": [
-                {
-                    "key": "digits",
-                    "aliases": [
-                        "digits"
-                    ],
-                    "description": "Precision after the decimal seperator",
-                    "type": "int"
-                },
-                {
-                    "key": "increment",
-                    "aliases": [
-                        "increment"
-                    ],
-                    "description": "How much to increment the value by for every button press",
-                    "type": "float"
-                },
-                {
-                    "key": "isInt",
-                    "aliases": [
-                        "integer-only"
-                    ],
-                    "description": "Whether or not this value is an integer",
-                    "type": "bool"
-                },
-                {
-                    "key": "maxValue",
-                    "aliases": [
-                        "max"
-                    ],
-                    "description": "The max value",
-                    "type": "float"
-                },
-                {
-                    "key": "minValue",
-                    "aliases": [
-                        "min"
-                    ],
-                    "description": "The minimum value",
-                    "type": "float"
-                }
-            ],
-            "description": "A BSML Component to use an increment setting"
-        },
-        {
-            "typename": "BSML.ListSetting",
-            "properties": [
-                {
-                    "key": "options",
-                    "aliases": [
-                        "options",
-                        "choices"
-                    ],
-                    "description": "BSMLValue id of the Object list to use",
-                    "type": "BSMLValue ID (List<Il2CppObject*>*)"
-                }
-            ],
-            "description": "A BSML Component to use a list setting"
-        },
-        {
-            "typename": "BSML.ListSliderSetting",
-            "properties": [
-                {
-                    "key": "options",
-                    "aliases": [
-                        "options",
-                        "choices"
-                    ],
-                    "description": "BSMLValue id of the Object list to use",
-                    "type": "BSMLValue ID (List<Il2CppObject*>*)"
-                },
-                {
-                    "key": "showButtons",
-                    "aliases": [
-                        "show-buttons"
-                    ],
-                    "description": "Whether or not to show the buttons for the slider",
-                    "type": "bool"
-                }
-            ],
-            "description": "A BSML Component to use a List Slider setting"
-        },
-        {
-            "typename": "BSML.SliderSetting",
-            "properties": [
-                {
-                    "key": "digits",
-                    "aliases": [
-                        "digits"
-                    ],
-                    "description": "Precision after the decimal seperator",
-                    "type": "int"
-                },
-                {
-                    "key": "increment",
-                    "aliases": [
-                        "increment"
-                    ],
-                    "description": "How much to increment the value per slider tick",
-                    "type": "float"
-                },
-                {
-                    "key": "isInt",
-                    "aliases": [
-                        "integer-only"
-                    ],
-                    "description": "Whether or not this value is an integer",
-                    "type": "bool"
-                },
-                {
-                    "key": "maxValue",
-                    "aliases": [
-                        "max"
-                    ],
-                    "description": "The max value",
-                    "type": "float"
-                },
-                {
-                    "key": "minValue",
-                    "aliases": [
-                        "min"
-                    ],
-                    "description": "the minimum value",
-                    "type": "float"
-                },
-                {
-                    "key": "showButtons",
-                    "aliases": [
-                        "show-buttons"
-                    ],
-                    "description": "Whether or not to show the buttons for the slider",
-                    "type": "bool"
-                }
-            ],
-            "description": "A BSML Component to use a Slider setting"
-        },
-        {
-            "typename": "BSML.Tab",
-            "properties": [
-                {
-                    "key": "tabName",
-                    "aliases": [
-                        "tab-name"
-                    ],
-                    "description": "The name of the tab",
-                    "type": "string"
-                },
-                {
-                    "key": "tabNameKey",
-                    "aliases": [
-                        "tab-name-key"
-                    ],
-                    "description": "The key of the tab for localization",
-                    "type": "string"
-                }
-            ],
-            "description": "A BSML Component for defining tabs"
-        },
-        {
-            "typename": "BSML.TabSelector",
-            "properties": [
-                {
-                    "key": "leftButtonTag",
-                    "aliases": [
-                        "left-button-tag"
-                    ],
-                    "description": "The tag used for the 'Left' button",
-                    "type": "string"
-                },
-                {
-                    "key": "pageCount",
-                    "aliases": [
-                        "page-count"
-                    ],
-                    "description": "The amount of tabs per page this component should display",
-                    "type": "int"
-                },
-                {
-                    "key": "rightButtonTag",
-                    "aliases": [
-                        "right-button-tag"
-                    ],
-                    "description": "The tag used for the 'Right' button",
-                    "type": "string"
-                },
-                {
-                    "key": "tabTag",
-                    "aliases": [
-                        "tab-tag"
-                    ],
-                    "description": "The tag tabs should use if they belong to this selector",
-                    "type": "string"
-                }
-            ],
-            "description": "A BSML Component to select different tabs"
-        },
-        {
-            "typename": "TMPro.TextMeshProUGUI",
-            "properties": [
-                {
-                    "key": "allUppercase",
-                    "aliases": [
-                        "all-uppercase"
-                    ],
-                    "description": "Whether or not all the text should be uppercase",
-                    "type": "bool"
-                },
-                {
-                    "key": "bold",
-                    "aliases": [
-                        "bold"
-                    ],
-                    "description": "Whether or not the text should be bold",
-                    "type": "bool"
-                },
-                {
-                    "key": "faceColor",
-                    "aliases": [
-                        "face-color"
-                    ],
-                    "description": "The face color of the font",
-                    "type": "HTML Color String"
-                },
-                {
-                    "key": "fontAlign",
-                    "aliases": [
-                        "font-align",
-                        "align"
-                    ],
-                    "description": "How to align the text",
-                    "type": "enum TMPro::TextAlignmentOptions"
-                },
-                {
-                    "key": "fontColor",
-                    "aliases": [
-                        "font-color"
-                    ],
-                    "description": "The color of the font",
-                    "type": "HTML Color String"
-                },
-                {
-                    "key": "fontSize",
-                    "aliases": [
-                        "font-size"
-                    ],
-                    "description": "The size of the font",
-                    "type": "float"
-                },
-                {
-                    "key": "italics",
-                    "aliases": [
-                        "italics"
-                    ],
-                    "description": "Whether or not the text should be italics",
-                    "type": "bool"
-                },
-                {
-                    "key": "outlineColor",
-                    "aliases": [
-                        "outline-color"
-                    ],
-                    "description": "The color of the outline",
-                    "type": "HTML Color String"
-                },
-                {
-                    "key": "outlineWidth",
-                    "aliases": [
-                        "outline-width"
-                    ],
-                    "description": "The width of the outline",
-                    "type": "float"
-                },
-                {
-                    "key": "overflowMode",
-                    "aliases": [
-                        "overflow-mode"
-                    ],
-                    "description": "How to handle text overflow",
-                    "type": "enum TMPro::TextOverflowModes"
-                },
-                {
-                    "key": "richText",
-                    "aliases": [
-                        "rich-text"
-                    ],
-                    "description": "Whether or not to allow rich text",
-                    "type": "bool"
-                },
-                {
-                    "key": "strikethrough",
-                    "aliases": [
-                        "strikethrough"
-                    ],
-                    "description": "Whether or not the text should be strikethrough",
-                    "type": "bool"
-                },
-                {
-                    "key": "text",
-                    "aliases": [
-                        "text",
-                        "label"
-                    ],
-                    "description": "The text to show",
-                    "type": "string"
-                },
-                {
-                    "key": "underlined",
-                    "aliases": [
-                        "underlined"
-                    ],
-                    "description": "Whether or not the text should be underlined",
-                    "type": "bool"
-                },
-                {
-                    "key": "wordWrapping",
-                    "aliases": [
-                        "word-wrapping"
-                    ],
-                    "description": "Whether to wrap the text",
-                    "type": "bool"
-                }
-            ],
-            "description": "A Text Component from TMPro"
+            ]
         },
         {
             "typename": "HMUI.TextSegmentedControl",
@@ -2333,386 +854,1214 @@
                     "aliases": [
                         "contents",
                         "data"
-                    ],
-                    "description": "BSMLValue id of the List<StringW> to use",
-                    "type": "BSMLValue ID (List<StringW>*)"
+                    ]
                 },
                 {
                     "key": "selectCell",
                     "aliases": [
                         "select-cell",
                         "cell-select"
-                    ],
-                    "description": "BSMLAction id to run when a cell is clicked",
-                    "type": "BSMLAction ID (void(SegmentedControl*, int))"
+                    ]
                 }
-            ],
-            "description": "A Beat Saber UI Component to handle selecting different pieces of text (Difficulty select)"
+            ]
+        },
+        {
+            "typename": "BSML.ClickableImage",
+            "properties": [
+                {
+                    "key": "clickEvent",
+                    "aliases": [
+                        "click-event",
+                        "event-click"
+                    ]
+                },
+                {
+                    "key": "defaultColor",
+                    "aliases": [
+                        "default-color"
+                    ]
+                },
+                {
+                    "key": "highlightColor",
+                    "aliases": [
+                        "highlight-color"
+                    ]
+                },
+                {
+                    "key": "onClick",
+                    "aliases": [
+                        "on-click"
+                    ]
+                }
+            ]
+        },
+        {
+            "typename": "BSML.ClickableText",
+            "properties": [
+                {
+                    "key": "clickEvent",
+                    "aliases": [
+                        "click-event",
+                        "event-click"
+                    ]
+                },
+                {
+                    "key": "defaultColor",
+                    "aliases": [
+                        "default-color"
+                    ]
+                },
+                {
+                    "key": "highlightColor",
+                    "aliases": [
+                        "highlight-color"
+                    ]
+                },
+                {
+                    "key": "onClick",
+                    "aliases": [
+                        "on-click"
+                    ]
+                }
+            ]
+        },
+        {
+            "typename": "UnityEngine.UI.ContentSizeFitter",
+            "properties": [
+                {
+                    "key": "horizontalFit",
+                    "aliases": [
+                        "horizontal-fit"
+                    ]
+                },
+                {
+                    "key": "verticalFit",
+                    "aliases": [
+                        "vertical-fit"
+                    ]
+                }
+            ]
+        },
+        {
+            "typename": "BSML.CustomCellListTableData",
+            "properties": [
+                {
+                    "key": "alignCenter",
+                    "aliases": [
+                        "align-to-center"
+                    ]
+                },
+                {
+                    "key": "cellClickable",
+                    "aliases": [
+                        "clickable-cells"
+                    ]
+                },
+                {
+                    "key": "cellSize",
+                    "aliases": [
+                        "cell-size"
+                    ]
+                },
+                {
+                    "key": "cellTemplate",
+                    "aliases": [
+                        "_children"
+                    ]
+                },
+                {
+                    "key": "data",
+                    "aliases": [
+                        "contents",
+                        "data"
+                    ]
+                },
+                {
+                    "key": "id",
+                    "aliases": [
+                        "id"
+                    ]
+                },
+                {
+                    "key": "listDirection",
+                    "aliases": [
+                        "list-direction"
+                    ]
+                },
+                {
+                    "key": "listHeight",
+                    "aliases": [
+                        "list-height"
+                    ]
+                },
+                {
+                    "key": "listWidth",
+                    "aliases": [
+                        "list-width"
+                    ]
+                },
+                {
+                    "key": "selectCell",
+                    "aliases": [
+                        "select-cell"
+                    ]
+                },
+                {
+                    "key": "showScrollbar",
+                    "aliases": [
+                        "show-scrollbar"
+                    ]
+                },
+                {
+                    "key": "stickScrolling",
+                    "aliases": [
+                        "stick-scrolling"
+                    ]
+                },
+                {
+                    "key": "visibleCells",
+                    "aliases": [
+                        "visible-cells"
+                    ]
+                }
+            ]
+        },
+        {
+            "typename": "BSML.CustomListTableData",
+            "properties": [
+                {
+                    "key": "alignCenter",
+                    "aliases": [
+                        "align-to-center"
+                    ]
+                },
+                {
+                    "key": "cellSize",
+                    "aliases": [
+                        "cell-size"
+                    ]
+                },
+                {
+                    "key": "data",
+                    "aliases": [
+                        "data",
+                        "content"
+                    ]
+                },
+                {
+                    "key": "expandCell",
+                    "aliases": [
+                        "expand-cell"
+                    ]
+                },
+                {
+                    "key": "id",
+                    "aliases": [
+                        "id"
+                    ]
+                },
+                {
+                    "key": "listDirection",
+                    "aliases": [
+                        "list-direction"
+                    ]
+                },
+                {
+                    "key": "listHeight",
+                    "aliases": [
+                        "list-height"
+                    ]
+                },
+                {
+                    "key": "listStyle",
+                    "aliases": [
+                        "list-style"
+                    ]
+                },
+                {
+                    "key": "listWidth",
+                    "aliases": [
+                        "list-width"
+                    ]
+                },
+                {
+                    "key": "selectCell",
+                    "aliases": [
+                        "select-cell"
+                    ]
+                },
+                {
+                    "key": "showScrollbar",
+                    "aliases": [
+                        "show-scrollbar"
+                    ]
+                },
+                {
+                    "key": "stickScrolling",
+                    "aliases": [
+                        "stick-scrolling"
+                    ]
+                },
+                {
+                    "key": "visibleCells",
+                    "aliases": [
+                        "visible-cells"
+                    ]
+                }
+            ]
+        },
+        {
+            "typename": "UnityEngine.UI.Graphic",
+            "properties": [
+                {
+                    "key": "raycastPadding",
+                    "aliases": [
+                        "raycast-padding"
+                    ]
+                },
+                {
+                    "key": "raycastTarget",
+                    "aliases": [
+                        "raycast-target"
+                    ]
+                }
+            ]
+        },
+        {
+            "typename": "UnityEngine.UI.GridLayoutGroup",
+            "properties": [
+                {
+                    "key": "cellSize",
+                    "aliases": [
+                        "cell-size"
+                    ]
+                },
+                {
+                    "key": "cellSizeX",
+                    "aliases": [
+                        "cell-size-x"
+                    ]
+                },
+                {
+                    "key": "cellSizeY",
+                    "aliases": [
+                        "cell-size-y"
+                    ]
+                },
+                {
+                    "key": "spacing",
+                    "aliases": [
+                        "spacing"
+                    ]
+                },
+                {
+                    "key": "spacingX",
+                    "aliases": [
+                        "spacing-x"
+                    ]
+                },
+                {
+                    "key": "spacingY",
+                    "aliases": [
+                        "spacing-y"
+                    ]
+                }
+            ]
+        },
+        {
+            "typename": "UnityEngine.UI.HorizontalOrVerticalLayoutGroup",
+            "properties": [
+                {
+                    "key": "childControlHeight",
+                    "aliases": [
+                        "child-control-height"
+                    ]
+                },
+                {
+                    "key": "childControlWidth",
+                    "aliases": [
+                        "child-control-width"
+                    ]
+                },
+                {
+                    "key": "childForceExpandHeight",
+                    "aliases": [
+                        "child-expand-height"
+                    ]
+                },
+                {
+                    "key": "childForceExpandWidth",
+                    "aliases": [
+                        "child-expand-width"
+                    ]
+                },
+                {
+                    "key": "spacing",
+                    "aliases": [
+                        "spacing"
+                    ]
+                }
+            ]
+        },
+        {
+            "typename": "HMUI.IconSegmentedControl",
+            "properties": [
+                {
+                    "key": "data",
+                    "aliases": [
+                        "contents",
+                        "data"
+                    ]
+                },
+                {
+                    "key": "selectCell",
+                    "aliases": [
+                        "select-cell",
+                        "cell-select"
+                    ]
+                }
+            ]
+        },
+        {
+            "typename": "UnityEngine.UI.Image",
+            "properties": [
+                {
+                    "key": "image",
+                    "aliases": [
+                        "source",
+                        "src"
+                    ]
+                },
+                {
+                    "key": "imageColor",
+                    "aliases": [
+                        "image-color",
+                        "img-color"
+                    ]
+                },
+                {
+                    "key": "preserveAspect",
+                    "aliases": [
+                        "preserve-aspect"
+                    ]
+                }
+            ]
+        },
+        {
+            "typename": "HMUI.ImageView",
+            "properties": [
+                {
+                    "key": "skew",
+                    "aliases": [
+                        "skew"
+                    ]
+                }
+            ]
+        },
+        {
+            "typename": "HMUI.InputFieldView",
+            "properties": [
+                {
+                    "key": "onChange",
+                    "aliases": [
+                        "on-change"
+                    ]
+                },
+                {
+                    "key": "textLengthLimit",
+                    "aliases": [
+                        "text-length-limit"
+                    ]
+                }
+            ]
+        },
+        {
+            "typename": "BSML.Backgroundable",
+            "properties": [
+                {
+                    "key": "background",
+                    "aliases": [
+                        "bg",
+                        "background"
+                    ]
+                },
+                {
+                    "key": "backgroundAlpha",
+                    "aliases": [
+                        "bg-alpha",
+                        "background-alpha"
+                    ]
+                },
+                {
+                    "key": "backgroundColor",
+                    "aliases": [
+                        "bg-color",
+                        "background-color"
+                    ]
+                },
+                {
+                    "key": "backgroundColor0",
+                    "aliases": [
+                        "bg-color0",
+                        "background-color0"
+                    ]
+                },
+                {
+                    "key": "backgroundColor1",
+                    "aliases": [
+                        "bg-color1",
+                        "background-color1"
+                    ]
+                }
+            ]
+        },
+        {
+            "typename": "UnityEngine.UI.LayoutGroup",
+            "properties": [
+                {
+                    "key": "childAlign",
+                    "aliases": [
+                        "child-alignment",
+                        "child-align"
+                    ]
+                },
+                {
+                    "key": "pad",
+                    "aliases": [
+                        "padding",
+                        "pad"
+                    ]
+                },
+                {
+                    "key": "padBottom",
+                    "aliases": [
+                        "pad-bottom"
+                    ]
+                },
+                {
+                    "key": "padLeft",
+                    "aliases": [
+                        "pad-left"
+                    ]
+                },
+                {
+                    "key": "padRight",
+                    "aliases": [
+                        "pad-right"
+                    ]
+                },
+                {
+                    "key": "padTop",
+                    "aliases": [
+                        "pad-top"
+                    ]
+                }
+            ]
+        },
+        {
+            "typename": "LeaderboardTableView",
+            "properties": [
+                {
+                    "key": "cellSize",
+                    "aliases": [
+                        "cell-size"
+                    ]
+                }
+            ]
+        },
+        {
+            "typename": "BSML.ModalColorPicker",
+            "properties": [
+                {
+                    "key": "onCancel",
+                    "aliases": [
+                        "on-cancel"
+                    ]
+                },
+                {
+                    "key": "onChange",
+                    "aliases": [
+                        "color-change"
+                    ]
+                },
+                {
+                    "key": "onDone",
+                    "aliases": [
+                        "on-done"
+                    ]
+                },
+                {
+                    "key": "value",
+                    "aliases": [
+                        "value"
+                    ]
+                }
+            ]
+        },
+        {
+            "typename": "BSML.ModalKeyboard",
+            "properties": [
+                {
+                    "key": "clearOnOpen",
+                    "aliases": [
+                        "clear-on-open"
+                    ]
+                },
+                {
+                    "key": "onEnter",
+                    "aliases": [
+                        "on-enter"
+                    ]
+                },
+                {
+                    "key": "value",
+                    "aliases": [
+                        "value"
+                    ]
+                }
+            ]
+        },
+        {
+            "typename": "BSML.ModalView",
+            "properties": [
+                {
+                    "key": "clickOffCloses",
+                    "aliases": [
+                        "click-off-closes",
+                        "clickerino-offerino-closerino"
+                    ]
+                },
+                {
+                    "key": "hideEvent",
+                    "aliases": [
+                        "hide-event"
+                    ]
+                },
+                {
+                    "key": "id",
+                    "aliases": [
+                        "id"
+                    ]
+                },
+                {
+                    "key": "moveToCenter",
+                    "aliases": [
+                        "move-to-center"
+                    ]
+                },
+                {
+                    "key": "showEvent",
+                    "aliases": [
+                        "show-event"
+                    ]
+                }
+            ]
+        },
+        {
+            "typename": "BSML.PageButton",
+            "properties": [
+                {
+                    "key": "direction",
+                    "aliases": [
+                        "dir",
+                        "direction"
+                    ]
+                }
+            ]
+        },
+        {
+            "typename": "BSML.ProgressBar",
+            "properties": [
+                {
+                    "key": "subText1",
+                    "aliases": [
+                        "sub-text-1",
+                        "sub-1"
+                    ]
+                },
+                {
+                    "key": "subText2",
+                    "aliases": [
+                        "sub-text-2",
+                        "sub-2"
+                    ]
+                }
+            ]
+        },
+        {
+            "typename": "UnityEngine.UI.RawImage",
+            "properties": [
+                {
+                    "key": "image",
+                    "aliases": [
+                        "source",
+                        "src"
+                    ]
+                }
+            ]
+        },
+        {
+            "typename": "UnityEngine.RectTransform",
+            "properties": [
+                {
+                    "key": "active",
+                    "aliases": [
+                        "active"
+                    ]
+                },
+                {
+                    "key": "anchorMax",
+                    "aliases": [
+                        "anchor-max"
+                    ]
+                },
+                {
+                    "key": "anchorMaxX",
+                    "aliases": [
+                        "anchor-max-x"
+                    ]
+                },
+                {
+                    "key": "anchorMaxY",
+                    "aliases": [
+                        "anchor-max-y"
+                    ]
+                },
+                {
+                    "key": "anchorMin",
+                    "aliases": [
+                        "anchor-min"
+                    ]
+                },
+                {
+                    "key": "anchorMinX",
+                    "aliases": [
+                        "anchor-min-x"
+                    ]
+                },
+                {
+                    "key": "anchorMinY",
+                    "aliases": [
+                        "anchor-min-y"
+                    ]
+                },
+                {
+                    "key": "anchorPos",
+                    "aliases": [
+                        "anchored-position",
+                        "anchor-pos"
+                    ]
+                },
+                {
+                    "key": "anchorPosX",
+                    "aliases": [
+                        "anchored-position-x",
+                        "anchor-pos-x"
+                    ]
+                },
+                {
+                    "key": "anchorPosY",
+                    "aliases": [
+                        "anchored-position-y",
+                        "anchor-pos-y"
+                    ]
+                },
+                {
+                    "key": "hoverHint",
+                    "aliases": [
+                        "hover-hint"
+                    ]
+                },
+                {
+                    "key": "hoverHintKey",
+                    "aliases": [
+                        "hover-hint-key"
+                    ]
+                },
+                {
+                    "key": "localScale",
+                    "aliases": [
+                        "local-scale",
+                        "scale"
+                    ]
+                },
+                {
+                    "key": "name",
+                    "aliases": [
+                        "name"
+                    ]
+                },
+                {
+                    "key": "pivot",
+                    "aliases": [
+                        "pivot"
+                    ]
+                },
+                {
+                    "key": "pivotX",
+                    "aliases": [
+                        "pivot-x"
+                    ]
+                },
+                {
+                    "key": "pivotY",
+                    "aliases": [
+                        "pivot-y"
+                    ]
+                },
+                {
+                    "key": "sizeDelta",
+                    "aliases": [
+                        "size-delta"
+                    ]
+                },
+                {
+                    "key": "sizeDeltaX",
+                    "aliases": [
+                        "size-delta-x"
+                    ]
+                },
+                {
+                    "key": "sizeDeltaY",
+                    "aliases": [
+                        "size-delta-y"
+                    ]
+                }
+            ]
+        },
+        {
+            "typename": "BSML.ScrollIndicator",
+            "properties": [
+                {
+                    "key": "handleColor",
+                    "aliases": [
+                        "handle-color"
+                    ]
+                },
+                {
+                    "key": "handleImage",
+                    "aliases": [
+                        "handle-image"
+                    ]
+                }
+            ]
+        },
+        {
+            "typename": "BSML.ScrollableContainer",
+            "properties": [
+                {
+                    "key": "alignBottom",
+                    "aliases": [
+                        "align-bottom"
+                    ]
+                },
+                {
+                    "key": "id",
+                    "aliases": [
+                        "id"
+                    ]
+                },
+                {
+                    "key": "maskOverflow",
+                    "aliases": [
+                        "mask-overflow"
+                    ]
+                },
+                {
+                    "key": "scrollToBottomOnUpdate",
+                    "aliases": [
+                        "scroll-to-bottom-on-update"
+                    ]
+                }
+            ]
+        },
+        {
+            "typename": "UnityEngine.UI.Selectable",
+            "properties": [
+                {
+                    "key": "interactable",
+                    "aliases": [
+                        "interactable"
+                    ]
+                }
+            ]
+        },
+        {
+            "typename": "UnityEngine.UI.Button",
+            "properties": [
+                {
+                    "key": "clickEvent",
+                    "aliases": [
+                        "click-event",
+                        "event-click"
+                    ]
+                },
+                {
+                    "key": "onClick",
+                    "aliases": [
+                        "on-click"
+                    ]
+                }
+            ]
+        },
+        {
+            "typename": "BSML.ButtonIconImage",
+            "properties": [
+                {
+                    "key": "icon",
+                    "aliases": [
+                        "icon"
+                    ]
+                },
+                {
+                    "key": "iconSkew",
+                    "aliases": [
+                        "icon-skew"
+                    ]
+                },
+                {
+                    "key": "showUnderline",
+                    "aliases": [
+                        "show-underline"
+                    ]
+                }
+            ]
+        },
+        {
+            "typename": "BSML.DropdownListSetting",
+            "properties": [
+                {
+                    "key": "options",
+                    "aliases": [
+                        "options",
+                        "choices"
+                    ]
+                }
+            ]
+        },
+        {
+            "typename": "BSML.IncrementSetting",
+            "properties": [
+                {
+                    "key": "digits",
+                    "aliases": [
+                        "digits"
+                    ]
+                },
+                {
+                    "key": "increment",
+                    "aliases": [
+                        "increment"
+                    ]
+                },
+                {
+                    "key": "isInt",
+                    "aliases": [
+                        "integer-only"
+                    ]
+                },
+                {
+                    "key": "maxValue",
+                    "aliases": [
+                        "max"
+                    ]
+                },
+                {
+                    "key": "minValue",
+                    "aliases": [
+                        "min"
+                    ]
+                }
+            ]
+        },
+        {
+            "typename": "BSML.ListSetting",
+            "properties": [
+                {
+                    "key": "options",
+                    "aliases": [
+                        "options",
+                        "choices"
+                    ]
+                }
+            ]
+        },
+        {
+            "typename": "BSML.ListSliderSetting",
+            "properties": [
+                {
+                    "key": "options",
+                    "aliases": [
+                        "options",
+                        "choices"
+                    ]
+                },
+                {
+                    "key": "showButtons",
+                    "aliases": [
+                        "show-buttons"
+                    ]
+                }
+            ]
+        },
+        {
+            "typename": "BSML.SliderSetting",
+            "properties": [
+                {
+                    "key": "digits",
+                    "aliases": [
+                        "digits"
+                    ]
+                },
+                {
+                    "key": "increment",
+                    "aliases": [
+                        "increment"
+                    ]
+                },
+                {
+                    "key": "isInt",
+                    "aliases": [
+                        "integer-only"
+                    ]
+                },
+                {
+                    "key": "maxValue",
+                    "aliases": [
+                        "max"
+                    ]
+                },
+                {
+                    "key": "minValue",
+                    "aliases": [
+                        "min"
+                    ]
+                },
+                {
+                    "key": "showButtons",
+                    "aliases": [
+                        "show-buttons"
+                    ]
+                }
+            ]
+        },
+        {
+            "typename": "BSML.Tab",
+            "properties": [
+                {
+                    "key": "tabName",
+                    "aliases": [
+                        "tab-name"
+                    ]
+                },
+                {
+                    "key": "tabNameKey",
+                    "aliases": [
+                        "tab-name-key"
+                    ]
+                }
+            ]
+        },
+        {
+            "typename": "BSML.TabSelector",
+            "properties": [
+                {
+                    "key": "leftButtonTag",
+                    "aliases": [
+                        "left-button-tag"
+                    ]
+                },
+                {
+                    "key": "pageCount",
+                    "aliases": [
+                        "page-count"
+                    ]
+                },
+                {
+                    "key": "rightButtonTag",
+                    "aliases": [
+                        "right-button-tag"
+                    ]
+                },
+                {
+                    "key": "tabTag",
+                    "aliases": [
+                        "tab-tag"
+                    ]
+                }
+            ]
         },
         {
             "typename": "BSML.TextGradientUpdater",
             "properties": [
                 {
-                    "key": "gradientScrollSpeed",
+                    "key": "gradientColors",
                     "aliases": [
-                        "gradient-speed",
-                        "gradient-scroll-speed"
-                    ],
-                    "description": "The scroll speed of the gradient across the text",
-                    "type": "float"
+                        "gradient-colors",
+                        "gradient"
+                    ]
+                },
+                {
+                    "key": "gradientFixedStep",
+                    "aliases": [
+                        "gradient-fixed-step"
+                    ]
                 },
                 {
                     "key": "gradientScrollRepeat",
                     "aliases": [
                         "gradient-repeat",
                         "gradient-scroll-repeat"
-                    ],
-                    "description": "How many times the gradient repeats across the text",
-                    "type": "float"
+                    ]
                 },
                 {
-                    "key": "gradientColors",
+                    "key": "gradientScrollSpeed",
                     "aliases": [
-                        "gradient-colors",
-                        "gradient"
-                    ],
-                    "description": "The colors the gradient should be",
-                    "type": "List of HTML Color String"
-                },
-                {
-                    "key": "gradientFixedStep",
-                    "aliases": [
-                        "gradient-fixed-step"
-                    ],
-                    "description": "Whether the gradient should use fixed steps instead of going once around the text",
-                    "type": "bool"
+                        "gradient-speed",
+                        "gradient-scroll-speed"
+                    ]
                 },
                 {
                     "key": "gradientStepSize",
                     "aliases": [
                         "gradient-step-size",
                         "gradient-fixed-step-size"
-                    ],
-                    "description": "How big each step should be",
-                    "type": "float"
+                    ]
                 }
-            ],
-            "description": "A component that updates the text colors each LateUpdate call"
-        }
-    ],
-    "arguments": [
-        {
-            "name": "bool",
-            "description": "Boolean value",
-            "possibleValues": [
-                "true",
-                "false"
             ]
         },
         {
-            "name": "string",
-            "description": "Text value",
-            "possibleValues": [
-                "BSML is cool",
-                "I like trains",
-                "Pink Cute"
-            ]
-        },
-        {
-            "name": "float",
-            "description": "Decimal value",
-            "possibleValues": [
-                "0", "1", "-0.2", "25500.3654"
-            ]
-        },
-        {
-            "name": "int",
-            "description": "Integer value",
-            "possibleValues": [
-                "0", "2", "420", "-69"
-            ]
-        },
-        {
-            "name": "Vector2",
-            "description": "Vector2 value, if only 1 number given, sets both x and y to the same value",
-            "possibleValues": [
-                "0", "420 69.0", "0 0", "-69"
-            ]
-        },
-        {
-            "name": "Vector3",
-            "description": "Vector3 value, if only 1 number given, sets x, y and z to the same value, if 2 numbers given sets a sensible default for z",
-            "possibleValues": [
-                "0", "420 69.0 -42", "0 0", "-69"
-            ]
-        },
-        {
-            "name": "Vector4",
-            "description": "Vector4 value, if only 1 number given, sets x, y, z and w to the same value, if 2 numbers given sets z and w to x and y, if 3 numbers given sets a sensible default for w",
-            "possibleValues": [
-                "0", "420 69.0 -42", "0 0 0 1", "-69"
-            ]
-        },
-        {
-            "name": "HTML Color String",
-            "description": "A color string as used in HTML",
-            "possibleValues": [
-                "#ffffff",
-                "red",
-                "rgb(255, 255, 255)"
-            ]
-        },
-        {
-            "name": "List of HTML Color String",
-            "description": "A list of color strings as used in HTML, colors seperated by semicolons (;)",
-            "possibleValues": [
-                "rgb(0, 200, 0);rgb(0, 50, 0)",
-                "red;yellow;green;cyan;blue;magenta;red",
-                "#5bcefa;#f5a9b8;#ffffff;#f5a9b8;#5bcefa"
-            ]
-        },
-        {
-            "name": "enum TMPro::TextAlignmentOptions",
-            "description": "Text Alignment enum from TMPro",
-            "possibleValues": [
-                "TopLeft",
-                "Top",
-                "TopRight",
-                "TopJustified",
-                "TopFlush",
-                "TopGeoAligned",
-                "Left",
-                "Center",
-                "Right",
-                "Justified",
-                "Flush",
-                "CenterGeoAligned",
-                "BottomLeft",
-                "Bottom",
-                "BottomRight",
-                "BottomJustified",
-                "BottomFlush",
-                "BottomGeoAligned",
-                "BaselineLeft",
-                "Baseline",
-                "BaselineRight",
-                "BaselineJustified",
-                "BaselineFlush",
-                "BaselineGeoAligned",
-                "MidlineLeft",
-                "Midline",
-                "MidlineRight",
-                "MidlineJustified",
-                "MidlineFlush",
-                "MidlineGeoAligned",
-                "CaplineLeft",
-                "Capline",
-                "CaplineRight",
-                "CaplineJustified",
-                "CaplineFlush",
-                "CaplineGeoAligned"
-            ]
-        },
-        {
-            "name": "enum TMPro::TextOverflowModes",
-            "description": "Text Overflow mode enum from TMPro",
-            "possibleValues": [
-                "Overflow",
-                "Ellipsis",
-                "Masking",
-                "Truncate",
-                "ScrollRect",
-                "Page",
-                "Linked"
-            ]
-        },
-        {
-            "name": "enum ContentSizeFitter::Fitmode",
-            "description": "Fit Mode enum from UnityEngine",
-            "possibleValues": [
-                "Unconstrained",
-                "MinSize",
-                "PreferredSize"
-            ]
-        },
-        {
-            "name": "enum TableView::TableType",
-            "description": "Table Type enum from HMUI",
-            "possibleValues": [
-                "Horizontal",
-                "Vertical"
-            ]
-        },
-        {
-            "name": "enum CustomListTableData::ListStyle",
-            "description": "List Style enum from BSML",
-            "possibleValues": [
-                "List",
-                "Box",
-                "Simple"
-            ]
-        },
-        {
-            "name": "enum UnityEngine::TextAnchor",
-            "description": "Text Anchor enum from UnityEngine",
-            "possibleValues": [
-                "UpperLeft",
-                "UpperCenter",
-                "UpperRight",
-                "MiddleLeft",
-                "MiddleCenter",
-                "MiddleRight",
-                "LowerLeft",
-                "LowerCenter",
-                "LowerRight"
-            ]
-        },
-        {
-            "name": "enum PageButtonDirection",
-            "description": "Page button rotation enum from BSML",
-            "possibleValues": [
-                "Up",
-                "Down",
-                "Left",
-                "Right"
-            ]
-        },
-        {
-            "name": "-",
-            "description": "This argument is undefined",
-            "possibleValues": []
-        },
-        {
-            "name": "BSMLValue",
-            "description": "A BSMLValue is any C# field name on your host object, or any method pair prefixed with get_ and set_",
-            "possibleValues": [
-                "DECLARE_INSTANCE_FIELD(UnityEngine::Color, userColor);", "DECLARE_INSTANCE_METHOD(List<StringW>*, get_list);",  "DECLARE_INSTANCE_METHOD(void, set_list, List<StringW>* value);"
-            ]
-        },
-        {
-            "name": "BSMLValue ID (T)",
-            "description": "A BSML Value ID that points to a T, where T is related to the tag you are using",
-            "possibleValues": [
-                "saberLength", "theColor", "theTexture"
-            ]
-        },
-        {
-            "name": "BSMLValue ID (List<IconSegmentedControl::DataItem*>*)",
-            "description": "A BSML Value ID that points to a List<IconSegmentedControl::DataItem*>*",
-            "possibleValues": [
-                "MyIconList", "SelectionIcons", "LeaderboardIcons"
-            ]
-        },
-        {
-            "name": "BSMLValue ID (List<Il2CppObject*>*)",
-            "description": "A BSML Value ID that points to a List<Il2CppObject*>*",
-            "possibleValues": [
-                "CustomCellData"
-            ]
-        },
-        {
-            "name": "BSMLValue ID (List<BSML::CustomCellInfo*>*)",
-            "description": "A BSML Value ID that points to a List<BSML::CustomCellInfo*>*",
-            "possibleValues": [
-                "TextureListCellData", "PlaylistCellData"
-            ]
-        },
-        {
-            "name": "BSMLValue ID (Color)",
-            "description": "A BSML Value ID that points to a Color",
-            "possibleValues": [
-                "SetBloqColor", "BloqColorUpdated"
-            ]
-        },
-        {
-            "name": "BSMLValue ID (StringW)",
-            "description": "A BSML Value ID that points to a StringW",
-            "possibleValues": [
-                "username", "url", "searchvalue"
-            ]
-        },
-        {
-            "name": "BSMLValue ID (List<StringW>*)",
-            "description": "A BSML Value ID that points to a List<StringW>*",
-            "possibleValues": [
-                "segmentedTexts", "tabs"
-            ]
-        },
-        {
-            "name": "BSMLValue ID (Il2CppObject*)",
-            "description": "A BSML Value ID that points to a Il2CppObject*",
-            "possibleValues": [
-                "hostForList", "hostForModal"
-            ]
-        },
-        {
-            "name": "BSMLValue ID (bool)",
-            "description": "A BSML Value ID that points to a bool",
-            "possibleValues": [
-                "makeModal", "makeStringSetting"
-            ]
-        },
-        {
-            "name": "BSMLValue ID (Transform*)",
-            "description": "A BSML Value ID that points to a Transform*",
-            "possibleValues": [
-                "vanillaSettingsTransorm", "transformToReparent"
-            ]
-        },
-        {
-            "name": "BSMLValue ID (List<Transform*>*)",
-            "description": "A BSML Value ID that points to a List<Transform*>*",
-            "possibleValues": [
-                "vanillaTransforms", "transformsToReparent"
-            ]
-        },
-        {
-            "name": "BSMLAction",
-            "description": "A BSMLAction is any C# method on your host object, or any special id#method from the components, like list#PageUp",
-            "possibleValues": [
-                "DECLARE_INSTANCE_METHOD(void, OnLengthChanged, float value);", "DECLARE_INSTANCE_METHOD(void, OnSelectCell, HMUI::TableView* tableView, int idx);"
-            ]
-        },
-        {
-            "name": "BSMLAction ID (void(T))",
-            "description": "A BSML Action ID or Methodname that would run a void (T) method where T is related to the tag you are using",
-            "possibleValues": [
-                "ChangeSaberLength", "OnChangeColor", "UpdateTextureList"
-            ]
-        },
-        {
-            "name": "BSMLAction ID (void(void))",
-            "description": "A BSML Action ID or Methodname that would run a void (void) method",
-            "possibleValues": [
-                "ClickProfileImage", "ClickApplyButton", "list#PageUp"
-            ]
-        },
-        {
-            "name": "BSMLAction ID (void(TableView*, int))",
-            "description": "A BSML Action ID or Methodname that would run a void (TableView*, int) method",
-            "possibleValues": [
-                "CellWasSelected"
-            ]
-        },
-        {
-            "name": "BSMLAction ID (void(Color))",
-            "description": "A BSML Action ID or Methodname that would run a void (Color) method",
-            "possibleValues": [
-                "ColorChanged", "ColorSelected"
-            ]
-        },
-        {
-            "name": "BSMLAction ID (void(StringW))",
-            "description": "A BSML Action ID or Methodname that would run a void (StringW) method",
-            "possibleValues": [
-                "EnterUser", "SearchForSongHash"
-            ]
-        },
-        {
-            "name": "BSMLAction ID (void(SegmentedControl*, int))",
-            "description": "A BSML Action ID or Methodname that would run a void (SegmentedControl*, int) method",
-            "possibleValues": [
-                "SegmentSelected", "SelectedTab"
+            "typename": "TMPro.TextMeshProUGUI",
+            "properties": [
+                {
+                    "key": "allUppercase",
+                    "aliases": [
+                        "all-uppercase"
+                    ]
+                },
+                {
+                    "key": "bold",
+                    "aliases": [
+                        "bold"
+                    ]
+                },
+                {
+                    "key": "enableAutoSizing",
+                    "aliases": [
+                        "enable-auto-sizing"
+                    ]
+                },
+                {
+                    "key": "faceColor",
+                    "aliases": [
+                        "face-color"
+                    ]
+                },
+                {
+                    "key": "fontAlign",
+                    "aliases": [
+                        "font-align",
+                        "align"
+                    ]
+                },
+                {
+                    "key": "fontColor",
+                    "aliases": [
+                        "font-color",
+                        "color"
+                    ]
+                },
+                {
+                    "key": "fontSize",
+                    "aliases": [
+                        "font-size"
+                    ]
+                },
+                {
+                    "key": "fontSizeMax",
+                    "aliases": [
+                        "font-size-max"
+                    ]
+                },
+                {
+                    "key": "fontSizeMin",
+                    "aliases": [
+                        "font-size-min"
+                    ]
+                },
+                {
+                    "key": "italics",
+                    "aliases": [
+                        "italics"
+                    ]
+                },
+                {
+                    "key": "lineSpacing",
+                    "aliases": [
+                        "line-spacing"
+                    ]
+                },
+                {
+                    "key": "lineSpacingAdjustment",
+                    "aliases": [
+                        "line-spacing-adjustment"
+                    ]
+                },
+                {
+                    "key": "outlineColor",
+                    "aliases": [
+                        "outline-color"
+                    ]
+                },
+                {
+                    "key": "outlineWidth",
+                    "aliases": [
+                        "outline-width"
+                    ]
+                },
+                {
+                    "key": "overflowMode",
+                    "aliases": [
+                        "overflow-mode"
+                    ]
+                },
+                {
+                    "key": "paragraphSpacing",
+                    "aliases": [
+                        "paragraph-spacing"
+                    ]
+                },
+                {
+                    "key": "richText",
+                    "aliases": [
+                        "rich-text"
+                    ]
+                },
+                {
+                    "key": "strikethrough",
+                    "aliases": [
+                        "strikethrough"
+                    ]
+                },
+                {
+                    "key": "text",
+                    "aliases": [
+                        "text",
+                        "label"
+                    ]
+                },
+                {
+                    "key": "underlined",
+                    "aliases": [
+                        "underlined"
+                    ]
+                },
+                {
+                    "key": "wordWrapping",
+                    "aliases": [
+                        "word-wrapping"
+                    ]
+                }
             ]
         }
     ]
